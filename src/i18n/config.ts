@@ -1,4 +1,5 @@
 import type { I18nStrings } from "./types";
+import ptBRLocale from "./locales/pt-br";
 import ARLocale from "./locales/ar";
 import ENLocale from "./locales/en";
 import CNLocale from "./locales/zh";
@@ -36,7 +37,15 @@ export const localeToProfile = {
     langTag: "en-US",
     direction: "ltr",
     googleFontName: "IBM+Plex+Mono",
-    default: true,
+    default: false,
+  },
+  "pt-br": {
+    name: "Português",
+    messages: ptBRLocale,
+    langTag: "pt-BR",
+    direction: "ltr",
+    googleFontName: "IBM+Plex+Mono",
+    default: true, // <--- Isso define como padrão!
   },
 } satisfies Record<string, LocaleProfile>;
 
