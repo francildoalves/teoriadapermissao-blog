@@ -2,16 +2,16 @@ import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
   "site.title": "Teoria da Permissão",
-  "site.desc": "Estudos e percepções sobre a Teoria da Permissão do Elton Euler e Aliança Divergente.",
+  "site.desc": "Estudos e percepções sobre a Teoria da Permissão do Elton Euler e da Aliança Divergente.",
 };
 
 const PTBRLocale: I18nStrings = {
   ...baseStrings,
-  "hero.title": "Bem-vindo",
+  "hero.title": "Bem-vindo(a)",
   "hero.body": `
         Este blog documenta meus estudos sobre a Teoria da Permissão.
-        Aqui compartilho aprendizados, percepções e ferramentas para
-        quem busca governança emocional e inteligência relacional.
+        Aqui compartilho aprendizados, percepções, e ferramentas para
+        quem busca entender o que é essa "Teoria da Permissão" e como impacta em nossas vidas.
         Sinta-se em casa para explorar.
 `,
   "hero.beforeReadme": "Leia as postagens ou confira o",
