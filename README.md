@@ -43,9 +43,10 @@ O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade ext
 
 Além das funcionalidades do tema original, as seguintes alterações foram implementadas:
 
-1.  **Formatação Regional:** Ajuste no componente `Datetime` para exibir datas no formato brasileiro (ex: *25 de dez. de 2025*) e horário 24h, mantendo o padrão AM/PM apenas para a versão em inglês.
-2.  **Integração de Afiliados:** Adição de um botão de destaque no cabeçalho com abertura segura de links externos (`rel="noopener noreferrer"`).
-3.  **Tradução Dinâmica:** Expansão dos dicionários de tradução (`pt-br`, `en`, `ar`, `zh`) para incluir termos de negócio específicos ("Ficha de Interesse").
+1. **Inclusão de Regionalização:** Inclisão do idioma Português do Brasil.
+2.  **Formatação Regional:** Ajuste no componente `Datetime` para exibir datas no formato brasileiro (ex: *25 de dez. de 2025*) e horário 24h, mantendo o padrão AM/PM apenas para a versão em inglês.
+3.  **Integração de Afiliados:** Adição de um botão de destaque no cabeçalho com abertura segura de links externos (`rel="noopener noreferrer"`).
+4.  **Tradução Dinâmica:** Expansão dos dicionários de tradução (`pt-br`, `en`, `ar`, `zh`) para incluir termos de negócio específicos ("Ficha de Interesse").
 
 ---
 
