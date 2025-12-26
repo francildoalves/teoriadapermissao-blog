@@ -1,6 +1,6 @@
 ---
 author: FranCILDO Soares Alves
-pubDatetime: 2025-12-25T09:01:00Z
+pubDatetime: 2025-12-25T21:53:00-03:00
 title: O Início de uma Nova Jornada na Teoria da Permissão
 postSlug: inicio-nova-jornada
 featured: true

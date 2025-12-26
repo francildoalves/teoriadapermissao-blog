@@ -29,12 +29,18 @@ const t = translateFor(currentLocale);
 /* ========== Formatted Datetime ========== */
 const latestDatetime =
   modDatetime && modDatetime > pubDatetime ? modDatetime : pubDatetime;
+
 const datetime = DateTime.fromJSDate(new Date(latestDatetime))
   .setZone(postTimezone || SITE.timezone)
   .setLocale(LOCALE.langTag);
 
-const date = datetime.toFormat("d MMM, yyyy"); // e.g., '22 Mar, 2025'
-const time = datetime.toFormat("hh:mm a"); // e.g., '08:30 PM'
+// DATA: Adapta-se automaticamente (Ex: "25 de dez. de 2025" no BR, "Dec 25, 2025" nos EUA)
+const date = datetime.toLocaleString(DateTime.DATE_MED);
+
+// HORA: Usa AM/PM apenas para Inglês, e 24h para o resto (BR, Árabe, Chinês)
+const time = currentLocale === "en"
+  ? datetime.toFormat("hh:mm a")
+  : datetime.toFormat("HH:mm");
 ---
 
 <div class:list={["flex items-end space-x-2 opacity-80", className]}>
