@@ -1,91 +1,79 @@
-# AstroPaper com I18n
+# 🧠 Blog Teoria da Permissão
 
-🌍 [Leia-me em árabe](README.ar.md)
-🌍 [Leia-me em inglês](README.en.md)
+> *Documentando a jornada entre a Análise de Sistemas e a Governança Emocional.*
 
-<div align='center'>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3877e14a-0bdc-4e85-bcd4-542f93f860a3/deploy-status)](https://app.netlify.com/sites/astro-paper-i18n/deploys)
+![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100-success?style=flat-square)
+![Astro](https://img.shields.io/badge/Astro-5.0-orange?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?style=flat-square)
 
-![AstroPaper I18n](/public/astro-paper-i18n.png)
+Este repositório contém o código-fonte do blog oficial da **Teoria da Permissão**. O projeto foi desenvolvido seguindo princípios de **Green Software**, priorizando performance, acessibilidade e baixo consumo de recursos computacionais.
 
-</div>
+## 🚀 Sobre o Projeto
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-![Status do GitHub Actions](https://img.shields.io/github/actions/workflow/status/yousef8/astro-paper-i18n/deploy.yml?branch=main)
-![Release no GitHub](https://img.shields.io/github/v/release/yousef8/astro-paper-i18n)
-[![Status do Netlify](https://api.netlify.com/api/v1/badges/3877e14a-0bdc-4e85-bcd4-542f93f860a3/deploy-status)](https://app.netlify.com/sites/astro-paper-i18n/deploys)
+Este blog é uma implementação técnica robusta baseada no tema [AstroPaper](https://github.com/satnaing/astro-paper), com suporte a internacionalização (i18n) herdado do [AstroPaper I18n](https://github.com/yousef8/astro-paper-i18n).
 
-Este repositório é um fork do tema [AstroPaper](https://github.com/satnaing/astro-paper), aprimorado para oferecer suporte à internacionalização (i18n).
+O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade extrema, sem o "inchaço" (bloat) de frameworks JavaScript pesados no lado do cliente.
 
-O fork se baseia no tema original AstroPaper e integra funcionalidades de i18n.
+### ⚡ Principais Funcionalidades
 
-A integração de i18n é implementada usando o [roteamento i18n do Astro](https://docs.astro.build/en/guides/internationalization/).
+* **Green Software & Performance:** Pontuação 100/100 no Lighthouse. O site gera HTML estático e envia o mínimo de JS para o navegador.
+* **Internacionalização (i18n):**
+    * 🇧🇷 **Português (Padrão):** Conteúdo nativo.
+    * 🇺🇸 **Inglês / 🇨🇳 Chinês / 🇸🇦 Árabe:** Suporte estrutural para expansão global.
+* **UI/UX Personalizada:**
+    * Modo Claro/Escuro (Dark Mode).
+    * **Header Customizado:** Integração de botão de ação (CTA) para afiliados com ícone *bolt* e tooltips traduzidos.
+    * **Busca Fuzzy:** Pesquisa rápida dentro do blog sem dependências externas pesadas.
+* **Tipagem Forte:** Todo o projeto utiliza TypeScript para garantir a integridade dos dados e configurações.
 
-Como sou falante nativo de árabe, garanti que a integração i18n suporte idiomas RTL (como árabe, persa, etc.).
+---
 
-Se Deus quiser, este fork continuará sincronizado com o tema original [AstroPaper](https://github.com/satnaing/astro-paper).
+## 🛠️ Stack Tecnológica
 
-Este fork **não modifica a interface do tema original**; ele apenas adiciona suporte a i18n.
+* **Framework:** [Astro](https://astro.build/)
+* **Estilização:** [TailwindCSS](https://tailwindcss.com/)
+* **Linguagem:** TypeScript
+* **Ícones:** Tabler Icons (SVG puro)
+* **Conteúdo:** Markdown (`.md`) e MDX
 
-## Sumário
+---
 
-- [🔥 Funcionalidades](#-funcionalidades)
-  - [Melhorias de UI](#melhorias-de-ui)
-  - [Funcionalidades de i18n](#funcionalidades-de-i18n)
-  - [🧪 Testes](#-testes)
-- [Pontuação Lighthouse](#pontuação-lighthouse)
-- [Instalação](#instalação)
-- [📖 Como Usar](#-como-usar)
-- [🛠️ Configuração](#️-configuração)
-  - [🔧 Configurações do Site](#-configurações-do-site)
-  - [🌐 Configurações de Localidade](#-configurações-de-localidade)
-- [🧞 Comandos](#-comandos)
-- [🚧 Problemas Conhecidos](#-problemas-conhecidos)
+## ⚙️ Personalizações Realizadas
 
-## 🔥 Funcionalidades
+Além das funcionalidades do tema original, as seguintes alterações foram implementadas:
 
-Este projeto inclui todas as funcionalidades do tema original [AstroPaper](https://github.com/satnaing/astro-paper), com os seguintes aprimoramentos:
+1.  **Formatação Regional:** Ajuste no componente `Datetime` para exibir datas no formato brasileiro (ex: *25 de dez. de 2025*) e horário 24h, mantendo o padrão AM/PM apenas para a versão em inglês.
+2.  **Integração de Afiliados:** Adição de um botão de destaque no cabeçalho com abertura segura de links externos (`rel="noopener noreferrer"`).
+3.  **Tradução Dinâmica:** Expansão dos dicionários de tradução (`pt-br`, `en`, `ar`, `zh`) para incluir termos de negócio específicos ("Ficha de Interesse").
 
-### Melhorias de UI
+---
 
-- [x] **Independente de Direção:**
-  - [x] Suporte completo a RTL.
-  - [x] Interface consistente para direções `LTR` e `RTL`.
+## 👨🏻‍💻 Como Rodar Localmente
 
-### Funcionalidades de i18n
+Certifique-se de ter o Node.js e o pnpm (ou npm) instalados.
 
-- [x] Traduções da interface, incluindo números e datas.
-- [x] Seletor de idioma.
-- [x] Traduções relacionadas à acessibilidade.
-- [x] Integração i18n com tipagem segura usando TypeScript.
-- [x] Sitemaps com suporte a i18n ([`@astrojs/sitemap`](https://docs.astro.build/en/guides/integrations-guide/sitemap/)).
-- [x] Geração de imagens OG com suporte a i18n.
-  - Observação: o **satori** não suporta idiomas RTL, o que pode causar problemas de layout em imagens OG RTL.
-- [x] Feeds RSS com suporte a i18n ([`@astrojs/rss`](https://docs.astro.build/en/guides/rss/)).
-- [ ] 📋 **Planejado:**
-  - [ ] Tradução de rotas.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/SEU-USUARIO/SEU-REPO.git](https://github.com/SEU-USUARIO/SEU-REPO.git)
+    cd SEU-REPO
+    ```
 
-### 🧪 Testes
+2.  **Instale as dependências:**
+    ```bash
+    pnpm install
+    ```
 
-- [x] Testes unitários com [Vitest](https://vitest.dev/)
-- [x] Testes unitários para configurações e utilitários de i18n
-- [ ] Testes unitários para [src/utils](/src/utils)
-- [ ] Testes unitários para [src/config.ts](/src/config.ts)
+3.  **Rode o servidor de desenvolvimento:**
+    ```bash
+    pnpm dev
+    ```
+    O site estará disponível em `http://localhost:4321`.
 
-## Pontuação Lighthouse
+4.  **Build para Produção:**
+    ```bash
+    pnpm build
+    ```
 
-Clique para ver o relatório completo
+---
 
-<p align="center">
-  <a href="https://pagespeed.web.dev/analysis/https-yousef8-github-io-AstroPaperI18n-ar/d2cqwqovpv?form_factor=desktop">
-    <img width="710" alt="Pontuação Lighthouse do AstroPaper I18n" src="AstroPaper-lighthouse-score.svg">
-  </a>
-</p>
-
-## Instalação
-
-Você pode fazer um fork do repositório
-
-Ou instalar usando a CLI do Astro
-
-```bash
-pnpm create astro@latest --template yousef8/astro-paper-i18n
