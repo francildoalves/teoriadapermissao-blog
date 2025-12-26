@@ -101,6 +101,8 @@ const CNLocale: I18nStrings = {
   "a11y.pagination": "分页",
   "a11y.breadcrumb": "面包屑导航",
   "a11y.languagePicker": "语言选择器",
+  "affiliate.label": "意向表",
+  "affiliate.tooltip": "填写意向表",
 };
 
 export default CNLocale;

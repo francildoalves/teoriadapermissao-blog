@@ -102,6 +102,8 @@ const PTBRLocale: I18nStrings = {
   "a11y.pagination": "Paginação",
   "a11y.breadcrumb": "migalhas de pão",
   "a11y.languagePicker": "Seletor de Idioma",
+  "affiliate.label": "Ficha de Interesse",
+  "affiliate.tooltip": "Preencha a ficha de interesse",
 };
 
 export default PTBRLocale;

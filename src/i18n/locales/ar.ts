@@ -97,6 +97,8 @@ const ARLocale: I18nStrings = {
   "a11y.pagination": "ترقيم الصفحات",
   "a11y.breadcrumb": "اثار الطريق",
   "a11y.languagePicker": "اختر لغة الموقع",
+  "affiliate.label": "استمارة الاهتمام",
+  "affiliate.tooltip": "املأ استمارة الاهتمام",
 };
 
 export default ARLocale;

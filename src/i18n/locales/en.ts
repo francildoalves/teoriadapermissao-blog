@@ -102,6 +102,8 @@ const ENLocale: I18nStrings = {
   "a11y.pagination": "Pagination",
   "a11y.breadcrumb": "breadcrumb",
   "a11y.languagePicker": "Language Picker",
+  "affiliate.label": "Interest Form",
+  "affiliate.tooltip": "Fill out the interest form",
 };
 
 export default ENLocale;

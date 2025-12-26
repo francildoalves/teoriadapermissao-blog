@@ -91,6 +91,8 @@ export interface I18nStrings {
   "a11y.pagination": string;
   "a11y.breadcrumb": string;
   "a11y.languagePicker": string;
+  "affiliate.label": string;
+  "affiliate.tooltip": string;
 }
 
 export type I18nKeys = keyof I18nStrings;

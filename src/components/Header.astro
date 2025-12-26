@@ -2,6 +2,7 @@
 import Hr from "./Hr.astro";
 import IconX from "@/assets/icons/IconX.svg";
 import IconMoon from "@/assets/icons/IconMoon.svg";
+import IconBolt from "@/assets/icons/IconBolt.svg"; // Ícone do Raio importado
 import IconSearch from "@/assets/icons/IconSearch.svg";
 import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
@@ -134,9 +135,27 @@ const isActive = (path: string) => {
               <span class="sr-only">{t("search")}</span>
             </LinkButton>
           </li>
+
           <li class="col-span-1 flex items-center justify-center">
             <LanguagePicker />
           </li>
+
+          {/* --- INÍCIO DO LINK DE AFILIADO (RAIO) --- */}
+          <li class="col-span-1 flex items-center justify-center">
+            <a
+              href="https://indiquei.app/YKXGGVK"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="focus-outline flex p-3 sm:p-1 group inline-block hover:text-accent"
+              aria-label={t("affiliate.label")}
+              title={t("affiliate.tooltip")}
+            >
+              <IconBolt class="size-6 scale-125 sm:scale-100" />
+              <span class="sr-only">{t("affiliate.label")}</span>
+            </a>
+          </li>
+          {/* --- FIM DO LINK DE AFILIADO --- */}
+
           {
             SITE.lightAndDarkMode && (
               <li class="col-span-1 flex items-center justify-center">
