@@ -3,9 +3,9 @@ export interface I18nStrings {
   "site.desc": string;
   "hero.title": string;
   "hero.body": string;
-  "hero.beforeReadme": string;
-  "hero.readme": string;
-  "hero.afterReadme": string;
+  "hero.beforeCta": string;
+  "hero.cta": string;
+  "hero.afterCta": string;
   copy: string;
   copied: string;
   by: string;

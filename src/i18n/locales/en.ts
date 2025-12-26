@@ -14,9 +14,9 @@ const ENLocale: I18nStrings = {
         out of the box. Light and dark mode are supported by default. Moreover,
         additional color schemes can also be configured.
 `,
-  "hero.beforeReadme": "Read the blog posts or check",
-  "hero.readme": "README",
-  "hero.afterReadme": "for more info.",
+  "hero.beforeCta": "Read the blog posts or check",
+  "hero.cta": "README",
+  "hero.afterCta": "for more info.",
   copy: "copy",
   copied: "copied",
   by: "by",

@@ -59,6 +59,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <p>
         {t("hero.body")}
       </p>
+
+      {/* CÓDIGO ANTIGO (BACKUP) - INÍCIO
       <p class="mt-2">
         {t("hero.beforeReadme")}
         <LinkButton
@@ -69,6 +71,22 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         </LinkButton>
         {t("hero.afterReadme")}
       </p>
+      CÓDIGO ANTIGO (BACKUP) - FIM */}
+
+      {/* NOVO CÓDIGO (AFILIADO) */}
+      <p class="mt-2">
+        {t("hero.beforeCta")}
+        <a
+          href="https://indiquei.app/YKXGGVK"
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("hero.cta")}
+        </LinkButton>
+        {t("hero.afterCta")}
+      </p>
+
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (

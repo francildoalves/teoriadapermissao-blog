@@ -13,9 +13,9 @@ const CNLocale: I18nStrings = {
         该主题遵循最佳实践，开箱即提供无障碍支持。
         默认支持浅色和深色模式，此外还可以配置其他配色方案。
 `,
-  "hero.beforeReadme": "阅读博客文章或查看",
-  "hero.readme": "README",
-  "hero.afterReadme": "获取更多信息。",
+  "hero.beforeCta": "阅读博客文章或查看",
+  "hero.cta": "README",
+  "hero.afterCta": "获取更多信息。",
   copy: "复制",
   copied: "已复制",
   by: "作者",

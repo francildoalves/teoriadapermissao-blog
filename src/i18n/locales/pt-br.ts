@@ -11,12 +11,12 @@ const PTBRLocale: I18nStrings = {
   "hero.body": `
         Este blog documenta meus estudos sobre a Teoria da Permissão.
         Aqui compartilho aprendizados, percepções, e ferramentas para
-        quem busca entender o que é essa "Teoria da Permissão" e como impacta em nossas vidas.
+        quem busca entender o que é a "Teoria da Permissão" e como ela impacta em nossas vidas.
         Sinta-se em casa para explorar.
 `,
-  "hero.beforeReadme": "Leia as postagens ou confira o",
-  "hero.readme": "SOBRE",
-  "hero.afterReadme": "para saber mais.",
+  "hero.beforeCta": "Leia as postagens ou",
+  "hero.cta": "CLIQUE AQUI",
+  "hero.afterCta": "e preencha a ficha de interesse.",
   copy: "copiar",
   copied: "copiado",
   by: "por",
@@ -54,7 +54,7 @@ const PTBRLocale: I18nStrings = {
   toggleLightAndDark: "Alternar claro/escuro",
   "pagination.prev": "Ant",
   "pagination.next": "Próx",
-  "footer.text": "Copyright © {year} | Todos os direitos reservados",
+  "footer.text": "Copyright © {year} FranCILDO Gryphon | Todos os direitos reservados",
   "date.published": "Publicado em",
   "date.updated": "Atualizado em",
   "date.month.1": "Janeiro",
