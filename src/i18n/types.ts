@@ -48,6 +48,8 @@ export interface I18nStrings {
   "footer.terms": string;        // Texto: "Termos de Uso"
   "footer.privacySlug": string;  // Link: "politica-de-privacidade"
   "footer.termsSlug": string;    // Link: "termos-de-uso"
+  "footer.greenSoftware": string;
+  "footer.ipDisclaimer": string;
   "date.published": string;
   "date.updated": string;
   "date.month.1": string;

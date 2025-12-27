@@ -1,21 +1,22 @@
 import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
-  "site.title": "AstroPaper 多语言版",
-  "site.desc": "支持多语言的 AstroPaper 主题分支",
+  "site.title": "许可理论", // Permission Theory
+  "site.desc": "关于 Elton Euler 的许可理论 (Teoria da Permissão) 和分歧联盟的研究与见解。",
 };
 
 const CNLocale: I18nStrings = {
   ...baseStrings,
-  "hero.title": "你好",
+  "hero.title": "欢迎",
   "hero.body": `
-        AstroPaper 是一个极简、响应式、无障碍且对SEO友好的 Astro 博客主题。
-        该主题遵循最佳实践，开箱即提供无障碍支持。
-        默认支持浅色和深色模式，此外还可以配置其他配色方案。
+        本博客记录了我对许可理论的研究。
+        在这里，我分享所学、见解和工具，以此帮助那些
+        寻求理解什么是“许可理论”及其如何影响我们需要的人。
+        请随意探索。
 `,
-  "hero.beforeCta": "阅读博客文章或查看",
-  "hero.cta": "README",
-  "hero.afterCta": "获取更多信息。",
+  "hero.beforeCta": "阅读文章或",
+  "hero.cta": "点击这里",
+  "hero.afterCta": "填写意向表。",
   copy: "复制",
   copied: "已复制",
   by: "作者",
@@ -58,6 +59,8 @@ const CNLocale: I18nStrings = {
   "footer.terms": "使用条款",
   "footer.privacySlug": "privacy-policy",
   "footer.termsSlug": "terms-of-use",
+  "footer.greenSoftware": "🌱 网站基于绿色软件原则构建：针对能源效率和减少碳足迹进行了优化。",
+  "footer.ipDisclaimer": "品牌 'Teoria da Permissão' 和 'Aliança Divergente' 生态系统是 Elton Euler 的知识产权。本门户网站是官方盟友出于学习目的的独立倡议。",
   "date.published": "发布于",
   "date.updated": "更新于",
   "date.month.1": "一月",

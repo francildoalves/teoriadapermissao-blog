@@ -59,6 +59,8 @@ const PTBRLocale: I18nStrings = {
   "footer.terms": "Termos de Uso",
   "footer.privacySlug": "politica-de-privacidade",
   "footer.termsSlug": "termos-de-uso",
+  "footer.greenSoftware": "🌱 Site construído utilizando princípios de Green Software: Otimizado para eficiência energética e redução de pegada de carbono.",
+  "footer.ipDisclaimer": "A marca 'Teoria da Permissão' e o ecossistema 'Aliança Divergente' são propriedades intelectuais de Elton Euler. Este portal é uma iniciativa independente de um Aliado oficial para fins de estudo.",
   "date.published": "Publicado em",
   "date.updated": "Atualizado em",
   "date.month.1": "Janeiro",

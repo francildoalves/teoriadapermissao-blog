@@ -1,5 +1,5 @@
 ---
-author: FranCILDO Soares Alves
+author: FranCILDO Gryphon
 pubDatetime: 2025-12-25T21:53:00-03:00
 title: O Início de uma Nova Jornada na Teoria da Permissão
 postSlug: inicio-nova-jornada
@@ -8,7 +8,11 @@ draft: false
 tags:
   - boas-vindas
   - teoria da permissão
-  - governança emocional
+  - aliança divergente
+  - jornada pessoal
+  - mentalidade
+  - inteligência relacional
+  - análise lógica
 description:
   O primeiro passo para documentar meus estudos e vivências na Aliança Divergente sob a ótica de um Analista de Sistemas.
 ---

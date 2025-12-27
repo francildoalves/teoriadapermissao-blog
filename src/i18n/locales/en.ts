@@ -1,22 +1,22 @@
 import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
-  "site.title": "AstroPaper I18n",
-  "site.desc": "A fork of AstroPaper theme with support for I18n",
+  "site.title": "Permission Theory", // Traduzido para SEO local
+  "site.desc": "Studies and insights on Elton Euler's Permission Theory and the Divergent Alliance.",
 };
 
 const ENLocale: I18nStrings = {
   ...baseStrings,
-  "hero.title": "Mingalaba",
+  "hero.title": "Welcome",
   "hero.body": `
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        This blog documents my studies on Permission Theory.
+        Here I share learnings, insights, and tools for those
+        seeking to understand what "Permission Theory" is and how it impacts our lives.
+        Feel free to explore.
 `,
-  "hero.beforeCta": "Read the blog posts or check",
-  "hero.cta": "README",
-  "hero.afterCta": "for more info.",
+  "hero.beforeCta": "Read the posts or",
+  "hero.cta": "CLICK HERE",
+  "hero.afterCta": "and fill out the interest form.",
   copy: "copy",
   copied: "copied",
   by: "by",
@@ -59,6 +59,8 @@ const ENLocale: I18nStrings = {
   "footer.terms": "Terms of Use",
   "footer.privacySlug": "privacy-policy",
   "footer.termsSlug": "terms-of-use",
+  "footer.greenSoftware": "🌱 Site built using Green Software principles: Optimized for energy efficiency and carbon footprint reduction.",
+  "footer.ipDisclaimer": "The brand 'Teoria da Permissão' and the 'Aliança Divergente' ecosystem are intellectual properties of Elton Euler. This portal is an independent initiative by an official Ally for study purposes.",
   "date.published": "Published",
   "date.updated": "Updated",
   "date.month.1": "January",
