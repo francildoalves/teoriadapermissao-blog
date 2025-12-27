@@ -31,4 +31,14 @@ const about = defineCollection({
   }),
 });
 
-export const collections = { blog, about };
+// Nova coleção para Políticas
+const policies = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/data/policies" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    postSlug: z.string().optional(), // Permite URL personalizada (ex: politica-de-privacidade)
+  }),
+});
+
+export const collections = { blog, about, policies };

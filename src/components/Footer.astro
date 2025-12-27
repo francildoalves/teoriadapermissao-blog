@@ -1,5 +1,6 @@
 ---
 import { getLocaleInfo, translateFor } from "@/i18n/utils";
+import { DEFAULT_LOCALE } from "@/i18n/config"; // <--- Importação necessária
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
 
@@ -7,15 +8,24 @@ export interface Props {
   noMarginTop?: boolean;
 }
 
-const t = translateFor(Astro.currentLocale);
-
-const LOCALE = getLocaleInfo(Astro.currentLocale);
+// Garante que temos um idioma definido, usando o padrão como fallback
+const lang = Astro.currentLocale ?? DEFAULT_LOCALE;
+const t = translateFor(lang);
+const LOCALE = getLocaleInfo(lang);
 
 const currentYear = new Date().toLocaleDateString(LOCALE.langTag, {
   year: "numeric",
 });
 
 const { noMarginTop = false } = Astro.props;
+
+// --- Lógica dos Links das Políticas ---
+// Se for o idioma padrão, a URL fica limpa (sem prefixo).
+// Se for outro (ex: 'en'), adiciona '/en' antes.
+const langPrefix = lang === DEFAULT_LOCALE ? "" : `/${lang}`;
+
+const privacyLink = `${langPrefix}/policies/${t("footer.privacySlug")}`;
+const termsLink = `${langPrefix}/policies/${t("footer.termsSlug")}`;
 ---
 
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
@@ -24,8 +34,31 @@ const { noMarginTop = false } = Astro.props;
     class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4"
   >
     <Socials centered />
-    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
-      <span>{t("footer.text", { year: currentYear })}</span>
+    
+    <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+      
+      <div class="my-2 flex flex-col items-center sm:flex-row">
+        <span>{t("footer.text", { year: currentYear })}</span>
+      </div>
+
+      <div class="flex flex-wrap justify-center sm:justify-start gap-3 text-xs text-skin-base opacity-70 mt-1">
+        <a 
+          href={privacyLink} 
+          class="hover:text-skin-accent hover:underline decoration-dashed underline-offset-4 transition-colors"
+        >
+          {t("footer.privacy")}
+        </a>
+        
+        <span>|</span>
+        
+        <a 
+          href={termsLink} 
+          class="hover:text-skin-accent hover:underline decoration-dashed underline-offset-4 transition-colors"
+        >
+          {t("footer.terms")}
+        </a>
+      </div>
+
     </div>
   </div>
 </footer>

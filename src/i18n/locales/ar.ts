@@ -50,6 +50,10 @@ const ARLocale: I18nStrings = {
   "pagination.prev": "السابق",
   "pagination.next": "التالى",
   "footer.text": "حقوق الطبع والنشر © {year} | جميع الحقوق محفوظة",
+  "footer.privacy": "سياسة الخصوصية",
+  "footer.terms": "شروط الاستخدام",
+  "footer.privacySlug": "privacy-policy", // Mantivemos em inglês lembra?
+  "footer.termsSlug": "terms-of-use",
   "date.published": "نشر فى",
   "date.updated": "تم التحديث فى",
   "date.month.1": "يناير",

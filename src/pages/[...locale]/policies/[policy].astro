@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import { render } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Footer from "@/components/Footer.astro"; // <--- 1. ADICIONE ESSA IMPORTAÇÃO
+import { DEFAULT_LOCALE } from "@/i18n/config";
+
+export async function getStaticPaths() {
+  const policies = await getCollection("policies");
+
+  return policies.map((entry) => {
+    const [lang, filename] = entry.id.split("/");
+    const slug = entry.data.postSlug || filename;
+    const localeParam = lang === DEFAULT_LOCALE ? undefined : lang;
+
+    return {
+      params: { 
+        locale: localeParam, 
+        policy: slug 
+      },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const isRTL = entry.id.startsWith("ar/");
+---
+
+<Layout title={entry.data.title}>
+  <main 
+    class={`prose mx-auto max-w-3xl px-4 py-12 ${isRTL ? "text-right" : "text-left"}`} 
+    dir={isRTL ? "rtl" : "ltr"}
+  >
+    <h1 class="text-3xl font-bold mb-6">{entry.data.title}</h1>
+    
+    <div class="policy-content">
+      <Content />
+    </div>
+  </main>
+
+  <Footer />
+  
+</Layout>

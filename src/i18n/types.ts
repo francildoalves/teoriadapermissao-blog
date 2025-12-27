@@ -44,6 +44,10 @@ export interface I18nStrings {
   "pagination.prev": string;
   "pagination.next": string;
   "footer.text": string;
+  "footer.privacy": string;      // Texto: "Política de Privacidade"
+  "footer.terms": string;        // Texto: "Termos de Uso"
+  "footer.privacySlug": string;  // Link: "politica-de-privacidade"
+  "footer.termsSlug": string;    // Link: "termos-de-uso"
   "date.published": string;
   "date.updated": string;
   "date.month.1": string;

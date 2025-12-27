@@ -11,21 +11,22 @@ Este repositório contém o código-fonte do blog oficial da **Teoria da Permiss
 
 ## 🚀 Sobre o Projeto
 
-Este blog é uma implementação técnica robusta baseada no tema [AstroPaper](https://github.com/satnaing/astro-paper), com suporte a internacionalização (i18n) herdado do [AstroPaper I18n](https://github.com/yousef8/astro-paper-i18n).
+Este blog é uma implementação técnica robusta baseada no tema [AstroPaper](https://github.com/satnaing/astro-paper), com suporte a internacionalização (i18n).
 
 O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade extrema, sem o "inchaço" (bloat) de frameworks JavaScript pesados no lado do cliente.
 
 ### ⚡ Principais Funcionalidades
 
-* **Green Software & Performance:** Pontuação 100/100 no Lighthouse. O site gera HTML estático e envia o mínimo de JS para o navegador.
+* **Green Software & Performance:** Pontuação 100/100 no Lighthouse. Geração estática (SSG) com mínimo envio de JS ao cliente.
 * **Internacionalização (i18n):**
     * 🇧🇷 **Português (Padrão):** Conteúdo nativo.
-    * 🇺🇸 **Inglês / 🇨🇳 Chinês / 🇸🇦 Árabe:** Suporte estrutural para expansão global.
-* **UI/UX Personalizada:**
-    * Modo Claro/Escuro (Dark Mode).
-    * **Header Customizado:** Integração de botão de ação (CTA) para afiliados com ícone *bolt* e tooltips traduzidos.
-    * **Busca Fuzzy:** Pesquisa rápida dentro do blog sem dependências externas pesadas.
-* **Tipagem Forte:** Todo o projeto utiliza TypeScript para garantir a integridade dos dados e configurações.
+    * 🇺🇸 **Inglês / 🇨🇳 Chinês / 🇸🇦 Árabe:** Suporte estrutural implementado.
+* **Gestão de Políticas Legais (Novo):** Sistema escalável para Termos de Uso e Política de Privacidade, com URLs amigáveis e detecção de idioma automática no rodapé.
+* **UI/UX Estratégica:**
+    * **CTA Integrado:** Botão de ação (Call to Action) para produtos externos/afiliados integrado nativamente na navegação.
+    * **Modo Claro/Escuro:** Respeita preferência do sistema com alternância manual.
+    * **Busca Fuzzy:** Pesquisa rápida client-side.
+* **Tipagem Forte:** Todo o projeto utiliza TypeScript para garantir integridade e manutenção segura.
 
 ---
 
@@ -34,47 +35,25 @@ O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade ext
 * **Framework:** [Astro](https://astro.build/)
 * **Estilização:** [TailwindCSS](https://tailwindcss.com/)
 * **Linguagem:** TypeScript
-* **Ícones:** Tabler Icons (SVG puro)
 * **Conteúdo:** Markdown (`.md`) e MDX
+* **Deploy:** Netlify / Vercel (Compatível com qualquer host estático)
 
 ---
 
-## ⚙️ Personalizações Realizadas
+## ⚙️ Personalizações e Guia de Desenvolvimento
 
-Além das funcionalidades do tema original, as seguintes alterações foram implementadas:
+Abaixo estão documentadas as alterações estruturais e como utilizá-las para manutenção ou expansão do projeto.
 
-1. **Inclusão de Regionalização:** Inclisão do idioma Português do Brasil.
-2.  **Formatação Regional:** Ajuste no componente `Datetime` para exibir datas no formato brasileiro (ex: *25 de dez. de 2025*) e horário 24h, mantendo o padrão AM/PM apenas para a versão em inglês.
-3.  **Integração de Afiliados:** Adição de um botão de destaque no cabeçalho com abertura segura de links externos (`rel="noopener noreferrer"`).
-4.  **Tradução Dinâmica:** Expansão dos dicionários de tradução (`pt-br`, `en`, `ar`, `zh`) para incluir termos de negócio específicos ("Ficha de Interesse").
+### 1. Sistema de Políticas e Termos (Legal)
+O projeto possui uma *Collection* dedicada para documentos legais, permitindo URLs amigáveis em diferentes idiomas (ex: `/politica-de-privacidade` em PT e `/privacy-policy` em EN).
 
----
-
-## 👨🏻‍💻 Como Rodar Localmente
-
-Certifique-se de ter o Node.js e o pnpm (ou npm) instalados.
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/SEU-USUARIO/SEU-REPO.git](https://github.com/SEU-USUARIO/SEU-REPO.git)
-    cd SEU-REPO
-    ```
-
-2.  **Instale as dependências:**
-    ```bash
-    pnpm install
-    ```
-
-3.  **Rode o servidor de desenvolvimento:**
-    ```bash
-    pnpm dev
-    ```
-    O site estará disponível em `http://localhost:4321`.
-
-4.  **Build para Produção:**
-    ```bash
-    pnpm build
-    ```
-
----
-
+**Como adicionar/editar políticas:**
+1. Navegue até `src/data/policies/[idioma]/`.
+2. Crie ou edite o arquivo `.md`.
+3. **Frontmatter Obrigatório:**
+   ```yaml
+   ---
+   title: "Título da Página"
+   description: "Descrição para SEO"
+   postSlug: "url-amigavel-desejada" # Ex: politica-de-privacidade
+   ---
