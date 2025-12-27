@@ -15,6 +15,8 @@ Minha porta de entrada foi através da minha esposa. Ela começou a acompanhar o
 
 Um dos pontos que me deu segurança foi o embasamento técnico do Elton Euler. Vi que ele não é um desses gurus de internet, seu trabalho tem reconhecimento acadêmico, tendo sido condecorado como **Doutor Honoris Causa na ABRASCI** (Academia Brasileira de Ciências, Artes, História e Literatura).
 
+Além disso, compartilhos da visão de mundo onde homens são desafiados, mulheres valorizadas e crianças protegidas.
+
 Com o tempo passei a acompanhar ainda mais o seu trabalho e em meio às críticas, algumas chaves começaram a virar, coisas começaram a fazer sentido. Uma frase do Elton em particular mexeu comigo em um dado momento:
 
 > Toda dívida material esconde um débito emocional.

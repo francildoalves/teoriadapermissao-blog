@@ -17,7 +17,7 @@ description:
   O primeiro passo para documentar meus estudos e vivências na Aliança Divergente sob a ótica de um Analista de Sistemas.
 ---
 
-Seja bem-vindo ao meu blog oficial sobre a *Teoria da Permissão*.
+Seja bem-vindo ao meu blog sobre a *Teoria da Permissão*.
 
 Este espaço nasce de uma necessidade pessoal de organizar o conhecimento. Como *Analista de Sistemas*, aprendi que documentar é parte fundamental do aprendizado e da evolução de qualquer projeto — inclusive o projeto da nossa própria vida.
 
