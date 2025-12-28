@@ -15,7 +15,7 @@ description:
   The first step in documenting my studies and experiences in the Divergent Alliance from the perspective of a Systems Analyst.
 ---
 
-Welcome to my official blog about the *Permission Theory*.
+Welcome to my personal blog about the *Permission Theory*.
 
 This space is born from a personal need to organize knowledge. As a *Systems Analyst*, I learned that documenting is a fundamental part of learning and the evolution of any project — including the project of our own lives.
 

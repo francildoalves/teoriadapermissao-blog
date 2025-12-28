@@ -15,8 +15,8 @@ const ARLocale: I18nStrings = {
         لا تتردد في الاستكشاف.
 `,
   "hero.beforeCta": "اقرأ المقالات أو",
-  "hero.cta": "اضغط هنا",
-  "hero.afterCta": "لملء استمارة الاهتمام.",
+  "hero.cta": "املأ استمارة الاهتمام",
+  "hero.afterCta": "واكتشف لماذا لم تذهب أبعد من ذلك بعد.",
   copy: "نسخ",
   copied: "تم النسخ",
   by: "بواسطة",

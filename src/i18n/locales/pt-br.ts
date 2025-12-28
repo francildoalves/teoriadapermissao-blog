@@ -15,8 +15,8 @@ const PTBRLocale: I18nStrings = {
         Sinta-se em casa para explorar.
 `,
   "hero.beforeCta": "Leia as postagens ou",
-  "hero.cta": "CLIQUE AQUI",
-  "hero.afterCta": "e preencha a ficha de interesse.",
+  "hero.cta": "PREENCHA A FICHA DE INTERESSE",
+  "hero.afterCta": "e descubra porque você ainda não foi mais longe.",
   copy: "copiar",
   copied: "copiado",
   by: "por",

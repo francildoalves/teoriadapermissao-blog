@@ -15,8 +15,8 @@ const CNLocale: I18nStrings = {
         请随意探索。
 `,
   "hero.beforeCta": "阅读文章或",
-  "hero.cta": "点击这里",
-  "hero.afterCta": "填写意向表。",
+  "hero.cta": "填写意向表",
+  "hero.afterCta": "并发现为何你尚未走得更远。",
   copy: "复制",
   copied: "已复制",
   by: "作者",

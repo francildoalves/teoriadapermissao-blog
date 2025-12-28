@@ -15,8 +15,8 @@ const ENLocale: I18nStrings = {
         Feel free to explore.
 `,
   "hero.beforeCta": "Read the posts or",
-  "hero.cta": "CLICK HERE",
-  "hero.afterCta": "and fill out the interest form.",
+  "hero.cta": "FILL OUT THE INTEREST FORM",
+  "hero.afterCta": "and discover why you haven't gone further yet.",
   copy: "copy",
   copied: "copied",
   by: "by",
