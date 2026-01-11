@@ -33,10 +33,27 @@ Durante as lives, notei alguns relatos sobre perfis não oficiais tentando se pa
 Preenchi a ficha de interesse, conversei com uma colaboradora, recebi meu acesso, iniciei os estudos e agora compartilho minhas percepções com vocês.
 Este blog é o registro de como aplico a **Teoria da Permissão** tanto na gestão de meus negócios quanto na minha vida pessoal.
 
----
+<!-- Alerta CTA -->
 
-### Quer saber mais?
+<div class="not-prose my-6 border-s-4 border-green-500 bg-green-50 p-4 dark:bg-green-900/20">
+  <div class="flex items-center gap-2">
+    <span class="text-xl">🚀</span>
+    <strong class="text-green-700 dark:text-green-300">QUER SABER MAIS?</strong>
+  </div>
+  <p class="mt-2 text-green-800 dark:text-green-200">
+    Se você sente que também está "travado" em alguma área, acesse o 
+    <a href="https://indiquei.app/YKXGGVK" target="_blank" rel="noopener noreferrer" class="font-bold underline decoration-wavy hover:text-green-600 transition-colors">canal oficial</a>, 
+    onde você pode conhecer mais sobre a Aliança Divergente com total segurança.
+  </p>
+</div>
 
-Se você sente que também está "travado" em alguma área, deixo abaixo o link para o canal oficial, onde você pode conhecer mais sobre a Aliança Divergente com total segurança.
 
-**[Preencha a ficha de interesse aqui](https://indiquei.app/YKXGGVK)**
+<!-- Botão de CTA -->
+
+<div class="not-prose flex justify-center my-8">
+  <a href="https://indiquei.app/YKXGGVK" target="_blank" rel="nofollow noopener noreferrer"
+     style="text-decoration: none !important; color: white !important;"
+     class="group inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-lg font-bold shadow-xl transition-all hover:scale-105 bg-[#ea580c] dark:bg-[#ff6b01] text-white dark:text-[#212737]">
+     QUERO PREENCHER A FICHA DE INTERESSE <span class="group-hover:translate-x-1 transition-transform">➤</span>
+  </a>
+</div>

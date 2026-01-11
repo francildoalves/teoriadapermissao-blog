@@ -1,35 +1,57 @@
 ---
-title: "About"
+title: "About Me"
+description: "Follow FranCILDO's journey from skeptic to Ally in the Divergent Alliance."
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+My name is **FranCILDO**, I am 48 years old, a husband, a father, and I currently live in Fortaleza, Brazil. I enjoy nature, walking, running, and cycling. I have a background in **Systems Analysis and Development**, and my profession taught me to seek logic, structure, and method to understand the world. With this perspective, I decided to become an entrepreneur and created a business to boost the growth of small and medium-sized companies.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+## Meeting the Permission Theory
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Perhaps you are as skeptical as I was when I first encountered **Elton Euler's** work. Believe me, I understand you. If I said I joined the **Divergent Alliance** loving everything from the start, I would be lying.
 
-<div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+My point of entry was through my wife. She started following Elton Euler and would tell me: *"You need to see this, it makes so much sense for you"*. Since my background is in Systems Analysis and Development and I learned to look for logic in everything, I resisted. I watched some videos, criticized several points, and even found some things "sad" or too heavy to face. I went to research this man and found some interesting things that reassured me.
+
+## Academic Foundation and Credibility
+
+One of the points that gave me confidence was Elton Euler's technical background. I saw that he is not one of those internet gurus; his work has academic recognition, having been awarded a **Doctor Honoris Causa at ABRASCI** (Brazilian Academy of Sciences, Arts, History, and Literature).
+
+Furthermore, I share a world vision where men are challenged, women are valued, and children are protected.
+
+Over time, I began to follow his work even more, and amidst the criticism, some keys started to turn; things began to make sense. One quote from Elton in particular moved me at a certain moment:
+
+> Every material debt hides an emotional debt.
+
+At that moment in my life, my finances and businesses were stagnant, and even though I had the capacity and willingness, things were not evolving.
+
+## The Decision
+
+Even while participating in some events, having insights, making some decisions, and taking action (the "famous PDA"), I still didn't have all the puzzle pieces I needed to move forward. That was when I decided to be part of this movement.
+
+After the decision, I came across an important warning!
+During the live streams, I noticed some reports of unofficial profiles trying to impersonate Divergent Alliance collaborators. Since I work in the **IT** field, I deal with **digital security** daily, and I saw how the Alliance acted quickly to implement secure processes for those interested in changing their history.
+
+I filled out the interest form, talked to a collaborator, received my access, started my studies, and now I share my insights with you.
+This blog is a record of how I apply the **Permission Theory** in both my business management and my personal life.
+
+<div class="not-prose my-6 border-s-4 border-green-500 bg-green-50 p-4 dark:bg-green-900/20">
+  <div class="flex items-center gap-2">
+    <span class="text-xl">🚀</span>
+    <strong class="text-green-700 dark:text-green-300">WANT TO KNOW MORE?</strong>
+  </div>
+  <p class="mt-2 text-green-800 dark:text-green-200">
+    If you feel "stuck" in any area, access the 
+    <a href="https://indiquei.app/YKXGGVK" target="_blank" rel="noopener noreferrer" class="font-bold underline decoration-wavy hover:text-green-600 transition-colors">official channel</a>, 
+    where you can learn more about the Divergent Alliance with total security.
+  </p>
 </div>
 
-## Tech Stack
+<div class="not-prose flex justify-center my-8">
+  <a href="https://indiquei.app/YKXGGVK" target="_blank" rel="nofollow noopener noreferrer"
+     style="text-decoration: none !important; color: white !important;"
+     class="group inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-lg font-bold shadow-xl transition-all hover:scale-105 bg-[#ea580c] dark:bg-[#ff6b01] text-white dark:text-[#212737]">
+     I WANT TO FILL OUT THE INTEREST FORM <span class="group-hover:translate-x-1 transition-transform">➤</span>
+  </a>
+</div>
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
-
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+---
+*Note: This translation was generated by Artificial Intelligence to ensure reach and SEO. For official inquiries, please refer to the original Portuguese version.*
