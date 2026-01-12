@@ -99,6 +99,34 @@ Este projeto possui um sistema de **testes automatizados** que garante a qualida
 3.  **No GitHub (Rede de Segurança):**
     Se você esquecer de testar e enviar com erro, o **CI Pipeline** vai rodar no servidor e bloqueará o "sinal verde" no README do projeto, te avisando por e-mail.
 
+
+---
+
+## Passo 3.5: Criar Políticas (Específico deste Projeto)
+
+Este blog possui uma seção de **Políticas** (Privacidade e Termos) que também precisa ser traduzida. Sem isso, os links no rodapé quebrarão.
+
+1.  Crie a pasta: `src/data/policies/[novo-lang]/` (ex: `src/data/policies/fr/`).
+2.  Copie os arquivos `privacy.md` e `terms.md` de outra pasta (ex: `pt-br`).
+3.  Edite o conteúdo em Markdown.
+
+**Importante: O `postSlug` no arquivo Markdown deve bater com a tradução!**
+
+No seu arquivo de tradução (`src/i18n/locales/fr.ts`), você definiu:
+```typescript
+"footer.privacySlug": "politique-de-confidentialite",
+"footer.termsSlug": "conditions-d-utilisation",
+```
+
+Então, no arquivo `src/data/policies/fr/privacy.md`:
+```yaml
+---
+title: Politique de Confidentialité
+postSlug: politique-de-confidentialite  <-- TEM QUE SER IGUAL AO DO ARQUIVO .TS
+---
+Conteúdo traduzido...
+```
+
 ---
 
 ## Passo 4: Criando Posts no Novo Idioma
