@@ -1,13 +1,11 @@
 ---
 import { getLocaleInfo, translateFor } from "@/i18n/utils";
-import { DateTime } from "luxon";
 import IconCalendar from "@/assets/icons/IconCalendar.svg";
-import { SITE } from "@/config";
 
 export interface Props {
   class?: string;
   size?: "sm" | "lg";
-  timezone: string | undefined;
+  timezone?: string;
   pubDatetime: string | Date;
   modDatetime: string | Date | undefined | null;
 }
@@ -17,30 +15,38 @@ const {
   modDatetime,
   size = "sm",
   class: className = "",
-  timezone: postTimezone,
 } = Astro.props;
 
 const currentLocale = Astro.currentLocale;
-
 const LOCALE = getLocaleInfo(currentLocale);
-
 const t = translateFor(currentLocale);
 
 /* ========== Formatted Datetime ========== */
 const latestDatetime =
-  modDatetime && modDatetime > pubDatetime ? modDatetime : pubDatetime;
+  modDatetime && new Date(modDatetime) > new Date(pubDatetime)
+    ? modDatetime
+    : pubDatetime;
 
-const datetime = DateTime.fromJSDate(new Date(latestDatetime))
-  .setZone(postTimezone || SITE.timezone)
-  .setLocale(LOCALE.langTag);
+const dateObj = new Date(latestDatetime);
 
-// DATA: Adapta-se automaticamente (Ex: "25 de dez. de 2025" no BR, "Dec 25, 2025" nos EUA)
-const date = datetime.toLocaleString(DateTime.DATE_MED);
+// DATA: Formatação nativa flexível
+// Ex pt-BR: "25 de jan. de 2025" ou "25 de janeiro de 2025"
+const date = new Intl.DateTimeFormat(LOCALE.langTag, {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+}).format(dateObj);
 
-// HORA: Usa AM/PM apenas para Inglês, e 24h para o resto (BR, Árabe, Chinês)
-const time = currentLocale === "en"
-  ? datetime.toFormat("hh:mm a")
-  : datetime.toFormat("HH:mm");
+// HORA: Formatação nativa
+// Usa AM/PM se o idioma for inglês, ou 24h para outros
+const time = new Intl.DateTimeFormat(LOCALE.langTag, {
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: currentLocale === "en",
+}).format(dateObj);
+
+// ISO String para tag <time>
+const isoString = dateObj.toISOString();
 ---
 
 <div class:list={["flex items-end space-x-2 opacity-80", className]}>
@@ -51,7 +57,7 @@ const time = currentLocale === "en"
     ]}
   />
   {
-    modDatetime && modDatetime > pubDatetime ? (
+    modDatetime && new Date(modDatetime) > new Date(pubDatetime) ? (
       <span class:list={["text-sm italic", { "sm:text-base": size === "lg" }]}>
         {t("date.updated")}:
       </span>
@@ -60,7 +66,7 @@ const time = currentLocale === "en"
     )
   }
   <span class:list={["text-sm italic", { "sm:text-base": size === "lg" }]}>
-    <time datetime={datetime.toISO()}>{date}</time>
+    <time datetime={isoString}>{date}</time>
     <span aria-hidden="true"> | </span>
     <span class="sr-only">&nbsp;at&nbsp;</span>
     <span class="text-nowrap">{time}</span>

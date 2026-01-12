@@ -12,6 +12,9 @@ import {
 
 // https://astro.build/config
 export default defineConfig({
+  security: {
+    checkOrigin: true,
+  },
   site: SITE.website,
   i18n: {
     locales: SUPPORTED_LOCALES,
