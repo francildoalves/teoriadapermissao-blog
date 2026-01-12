@@ -23,6 +23,18 @@ export const localeToProfile = {
     langTag: "ar-EG",
     direction: "rtl", // Suporte a Right-to-Left
   },
+  es: {
+    name: "Español",
+    messages: ESLocale,
+    langTag: "es-ES",
+    direction: "ltr",
+  },
+  fr: {
+    name: "Français",
+    messages: FRLocale,
+    langTag: "fr-FR",
+    direction: "ltr",
+  },
   "pt-br": {
     name: "Português",
     messages: ptBRLocale,
@@ -30,7 +42,7 @@ export const localeToProfile = {
     direction: "ltr",
     default: true, // Define este como o idioma raiz (/)
   },
-  // ... outros idiomas (en, es, zh)
+  // ... outros idiomas (en, zh)
 };
 ```
 

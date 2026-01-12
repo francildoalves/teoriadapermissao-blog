@@ -4,6 +4,7 @@ import ARLocale from "./locales/ar";
 import ENLocale from "./locales/en";
 import CNLocale from "./locales/zh";
 import ESLocale from "./locales/es";
+import FRLocale from "./locales/fr";
 
 export type LocaleProfile = {
   name: string;
@@ -45,6 +46,13 @@ export const localeToProfile = {
     name: "Español",
     messages: ESLocale,
     langTag: "es-ES",
+    direction: "ltr",
+    googleFontName: "IBM+Plex+Mono",
+  },
+  fr: {
+    name: "Français",
+    messages: FRLocale,
+    langTag: "fr-FR",
     direction: "ltr",
     googleFontName: "IBM+Plex+Mono",
   },
