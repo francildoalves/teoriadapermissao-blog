@@ -21,12 +21,12 @@ O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade ext
 
 * **Green Software & Performance:** Pontuação 100/100 no Lighthouse. Geração estática (SSG) com mínimo envio de JavaScript ao cliente.
 * **Internacionalização (i18n):**
-
   * 🇧🇷 **Português (Padrão)** — Conteúdo nativo.
-  * 🇺🇸 **Inglês**, 🇨🇳 **Chinês**, 🇸🇦 **Árabe** — Suporte estrutural implementado.
+  * �🇸 **Espanhol** — Suporte completo implementado.
+  * �🇺🇸 **Inglês**, 🇨🇳 **Chinês**, 🇸🇦 **Árabe** — Suporte estrutural implementado.
+* **Componentes de Engajamento:** Blocos de alerta visuais (Info, Perigo, Dica, Saiba Mais) para destacar conteúdo no meio dos artigos.
 * **Gestão de Políticas Legais:** Sistema escalável para Termos de Uso e Política de Privacidade, com URLs amigáveis e detecção automática de idioma no rodapé.
 * **UI/UX Estratégica:**
-
   * **CTA Integrado:** Botão de ação (*Call to Action*) para produtos externos/afiliados integrado à navegação.
   * **Modo Claro/Escuro:** Respeita a preferência do sistema com alternância manual.
   * **Busca Fuzzy:** Pesquisa rápida *client-side*.
@@ -52,11 +52,6 @@ A seguir estão documentadas as alterações estruturais e diretrizes para manut
 
 O projeto utiliza uma *Collection* dedicada para documentos legais, permitindo URLs amigáveis em múltiplos idiomas.
 
-**Exemplos:**
-
-* Português: `/politica-de-privacidade`
-* Inglês: `/privacy-policy`
-
 **Como adicionar ou editar políticas:**
 
 1. Acesse o diretório `src/data/policies/[idioma]/`.
@@ -71,64 +66,78 @@ postSlug: "url-amigavel-desejada" # Ex: politica-de-privacidade
 ---
 ```
 
-**Observação:** o campo `postSlug` define a URL final. Mantenha-o consistente com o idioma ou padronizado em inglês, caso prefira URLs globais.
+**Observação:** o campo `postSlug` define a URL final. Mantenha-o consistente com o idioma.
 
-#### Disclaimer de Tradução por IA
+### 2. Componentes de Alerta (Snippets)
 
-Para arquivos traduzidos automaticamente, utilize o bloco abaixo ao final do Markdown:
+Para enriquecer a leitura, utilize os *snippets* configurados no VS Code. Basta digitar o **Prefixo** e pressionar `Tab`.
 
-> **Nota:** As traduções para outros idiomas foram geradas por Inteligência Artificial. A versão original em português é a oficial.
-
----
-
-### 2. Estratégia de CTA (Call to Action)
-
-O comportamento padrão de links sociais e repositório foi substituído para priorizar conversão.
-
-* **Localização:** Ícone de destaque no *Header* e links estratégicos.
-* **Configuração:** Edite o arquivo de constantes globais (ex.: `src/config.ts` ou `src/components/Socials.astro`, conforme a implementação).
-* **Segurança:** Links externos/afiliados utilizam automaticamente `rel="noopener noreferrer"`.
+| Tipo | Prefixo | Cor | Uso Recomendado |
+| :--- | :--- | :--- | :--- |
+| **Informação** | `alert-info` | 🔵 Azul | Notas técnicas, observações de lógica e confiança. |
+| **Dica** | `alert-dica` | 🟢 Verde | Sugestões de crescimento, êxito e boas práticas. |
+| **Atenção** | `alert-atencao` | 🟡 Amarelo | Pontos de cautela, foco e avisos importantes. |
+| **Perigo** | `alert-perigo` | 🔴 Vermelho | Urgência, erros críticos ou riscos de perda de dados. |
+| **Saiba Mais** | `alert-saibamais` | 🟣 Roxo | CTA para conversão, link externo ou aprofundamento. |
 
 ---
 
-### 3. Ajustes Regionais (L10n)
+## 🌐 Como Adicionar um Novo Idioma
 
-* **Datas:** Componente `Datetime` configurado para o padrão brasileiro (`dd de MMM. de yyyy`) e horário 24h.
-* **Rodapé Dinâmico:** O componente `Footer.astro` detecta o idioma ativo e gera os links corretos para as políticas legais sem *hardcoding*.
+Este é um processo delicado que exige atenção a 3 camadas: **Configuração**, **Interface** e **Conteúdo**. Siga a ordem abaixo para evitar erros de compilação.
+
+### Passo 1: Camada de Configuração (Core)
+
+Edite o arquivo `src/i18n/config.ts`:
+
+1.  Adicione a chave do novo idioma no objeto `localeToProfile`.
+    *   **Exemplo:** Se for adicionar Francês (`fr`), a chave deve ser `fr`.
+2.  Preencha os dados do perfil:
+    *   `name`: Nome nativo do idioma (ex: "Français").
+    *   `langTag`: Tag ISO correta (ex: "fr-FR"). **Crucial para SEO**.
+    *   `direction`: "ltr" (esquerda-para-direita) ou "rtl" (direita-para-esquerda).
+    *   `messages`: Importe o arquivo que você criará no Passo 2.
+
+### Passo 2: Camada de Interface (Tradução)
+
+1.  Vá para `src/i18n/locales/`.
+2.  Duplique o arquivo `pt-br.ts` e renomeie para a sigla do novo idioma (ex: `fr.ts`).
+3.  Traduza **TODAS** as chaves do arquivo.
+    *   ⚠️ **Atenção:** O TypeScript vai te impedir de rodar o projeto se faltar alguma chave. A consistência é obrigatória pela interface `I18nStrings`.
+
+### Passo 3: Camada de Conteúdo (Markdown)
+
+Crie os arquivos de conteúdo traduzidos nas pastas correspondentes. O sistema de rotas do Astro detectará os arquivos automaticamente baseando-se no sufixo do nome ou nas pastas.
+
+1.  **Página Sobre:** Crie `src/data/about/about.[idioma].md`.
+2.  **Políticas:**
+    *   Crie a pasta `src/data/policies/[idioma]/`.
+    *   Adicione `privacy-policy.md` e `terms-of-use.md` traduzidos.
+3.  **Postagens do Blog:**
+    *   Para posts traduzidos, adicione-os em `src/data/blog/[idioma]/`.
+
+### Passo 4: Verificação
+
+Rode o comando `npm run dev` e teste:
+*   O seletor de idiomas no topo da página.
+*   Navegação entre páginas (veja se a URL muda para `/[idioma]/...`).
+*   Rodapé e textos fixos da interface.
 
 ---
 
 ## 👨🏻‍💻 Como Rodar Localmente
 
-Pré-requisitos:
-
-* Node.js
-* pnpm (ou npm)
-
-### Clonar o repositório
+Pré-requisitos: Node.js e pnpm (ou npm)
 
 ```bash
-git clone [URL-DO-SEU-REPO]
-cd [NOME-DA-PASTA]
-```
-
-### Instalar dependências
-
-```bash
+# Instalar dependências
 pnpm install
-```
 
-### Rodar ambiente de desenvolvimento
-
-```bash
+# Rodar em desenvolvimento
 pnpm dev
-```
+# Acesse: http://localhost:4321
 
-A aplicação ficará disponível em: `http://localhost:4321`
-
-### Build para Produção
-
-```bash
+# Build para Produção
 pnpm build
 ```
 
