@@ -3,8 +3,8 @@
 > _Documentando a jornada entre a Análise de Sistemas e a Governança Emocional._
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build Status](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/code-standards-checks.yml/badge.svg)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/code-standards-checks.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/francildoalves/teoriadapermissao-blog?style=flat-square)](https://github.com/francildoalves/teoriadapermissao-blog/releases)
+[![Build Status](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/deploy.yml)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/francildoalves/teoriadapermissao-blog?style=flat-square)](https://github.com/francildoalves/teoriadapermissao-blog/tags)
 ![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100-success?style=flat-square)
 ![Astro](https://img.shields.io/badge/Astro-5.0-orange?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?style=flat-square)
