@@ -40,7 +40,8 @@ export const localeToProfile = {
     googleFontName: "IBM+Plex+Mono",
     default: false,
   },
-  es: { // 2. Inclusão do perfil em Espanhol
+  es: {
+    // 2. Inclusão do perfil em Espanhol
     name: "Español",
     messages: ESLocale,
     langTag: "es-ES",

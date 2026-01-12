@@ -44,10 +44,10 @@ export interface I18nStrings {
   "pagination.prev": string;
   "pagination.next": string;
   "footer.text": string;
-  "footer.privacy": string;      // Texto: "Política de Privacidade"
-  "footer.terms": string;        // Texto: "Termos de Uso"
-  "footer.privacySlug": string;  // Link: "politica-de-privacidade"
-  "footer.termsSlug": string;    // Link: "termos-de-uso"
+  "footer.privacy": string; // Texto: "Política de Privacidade"
+  "footer.terms": string; // Texto: "Termos de Uso"
+  "footer.privacySlug": string; // Link: "politica-de-privacidade"
+  "footer.termsSlug": string; // Link: "termos-de-uso"
   "footer.greenSoftware": string;
   "footer.ipDisclaimer": string;
   "date.published": string;

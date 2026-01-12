@@ -2,7 +2,8 @@ import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
   "site.title": "Teoria da Permissão",
-  "site.desc": "Estudos e percepções sobre a Teoria da Permissão do Elton Euler e da Aliança Divergente.",
+  "site.desc":
+    "Estudos e percepções sobre a Teoria da Permissão do Elton Euler e da Aliança Divergente.",
 };
 
 const PTBRLocale: I18nStrings = {
@@ -54,13 +55,16 @@ const PTBRLocale: I18nStrings = {
   toggleLightAndDark: "Alternar claro/escuro",
   "pagination.prev": "Ant",
   "pagination.next": "Próx",
-  "footer.text": "Copyright © {year} FranCILDO Gryphon | Todos os direitos reservados",
+  "footer.text":
+    "Copyright © {year} FranCILDO Gryphon | Todos os direitos reservados",
   "footer.privacy": "Política de Privacidade",
   "footer.terms": "Termos de Uso",
   "footer.privacySlug": "politica-de-privacidade",
   "footer.termsSlug": "termos-de-uso",
-  "footer.greenSoftware": "🌱 Site construído utilizando princípios de Green Software: Otimizado para eficiência energética e redução de pegada de carbono.",
-  "footer.ipDisclaimer": "A marca 'Teoria da Permissão' e o ecossistema 'Aliança Divergente' são propriedades intelectuais de Elton Euler. Este portal é uma iniciativa independente de um Aliado oficial para fins de estudo.",
+  "footer.greenSoftware":
+    "🌱 Site construído utilizando princípios de Green Software: Otimizado para eficiência energética e redução de pegada de carbono.",
+  "footer.ipDisclaimer":
+    "A marca 'Teoria da Permissão' e o ecossistema 'Aliança Divergente' são propriedades intelectuais de Elton Euler. Este portal é uma iniciativa independente de um Aliado oficial para fins de estudo.",
   "date.published": "Publicado em",
   "date.updated": "Atualizado em",
   "date.month.1": "Janeiro",

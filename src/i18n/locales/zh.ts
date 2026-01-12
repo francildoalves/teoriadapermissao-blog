@@ -2,7 +2,8 @@ import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
   "site.title": "许可理论", // Permission Theory
-  "site.desc": "关于 Elton Euler 的许可理论 (Teoria da Permissão) 和分歧联盟的研究与见解。",
+  "site.desc":
+    "关于 Elton Euler 的许可理论 (Teoria da Permissão) 和分歧联盟的研究与见解。",
 };
 
 const CNLocale: I18nStrings = {
@@ -59,8 +60,10 @@ const CNLocale: I18nStrings = {
   "footer.terms": "使用条款",
   "footer.privacySlug": "privacy-policy",
   "footer.termsSlug": "terms-of-use",
-  "footer.greenSoftware": "🌱 网站基于绿色软件原则构建：针对能源效率和减少碳足迹进行了优化。",
-  "footer.ipDisclaimer": "品牌 'Teoria da Permissão' 和 'Aliança Divergente' 生态系统是 Elton Euler 的知识产权。本门户网站是官方盟友出于学习目的的独立倡议。",
+  "footer.greenSoftware":
+    "🌱 网站基于绿色软件原则构建：针对能源效率和减少碳足迹进行了优化。",
+  "footer.ipDisclaimer":
+    "品牌 'Teoria da Permissão' 和 'Aliança Divergente' 生态系统是 Elton Euler 的知识产权。本门户网站是官方盟友出于学习目的的独立倡议。",
   "date.published": "发布于",
   "date.updated": "更新于",
   "date.month.1": "一月",

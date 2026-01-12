@@ -41,4 +41,5 @@ Esperamos que esto haya aclarado las cosas para usted y, como se mencionó anter
 Esta política es efectiva a partir de **diciembre de 2025**.
 
 ---
+
 > **Nota:** Esta traducción fue generada por Inteligencia Artificial para asegurar el alcance y el SEO. En caso de discrepancias, prevalecerá la versión original en portugués.

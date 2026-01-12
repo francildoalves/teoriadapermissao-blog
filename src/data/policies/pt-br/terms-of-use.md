@@ -10,12 +10,12 @@ Ao acessar ao site [Teoria da Permissão](https://teoriadapermissao.com.br), con
 
 ## 2. Uso de Licença
 
-É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Teoria da Permissão , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode: 
+É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Teoria da Permissão , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode:
 
-1. modificar ou copiar os materiais; 
-2. usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial); 
-3. tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Teoria da Permissão; 
-4. remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou 
+1. modificar ou copiar os materiais;
+2. usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);
+3. tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Teoria da Permissão;
+4. remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou
 5. transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.
 
 Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por Teoria da Permissão a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais baixados em sua posse, seja em formato eletrónico ou impresso.
@@ -46,4 +46,5 @@ O Teoria da Permissão pode revisar estes termos de serviço do site a qualquer 
 Estes termos e condições são regidos e interpretados de acordo com as leis do Teoria da Permissão e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.
 
 ---
+
 > **Nota:** As traduções para outros idiomas foram geradas por Inteligência Artificial. A versão original em português é a oficial.

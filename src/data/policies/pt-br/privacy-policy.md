@@ -41,4 +41,5 @@ Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver alg
 Esta política é efetiva a partir de **Dezembro/2025**.
 
 ---
+
 > **Nota:** As traduções para outros idiomas foram geradas por Inteligência Artificial. A versão original em português é a oficial.

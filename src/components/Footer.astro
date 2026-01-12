@@ -26,42 +26,52 @@ const termsLink = `${langPrefix}/policies/${t("footer.termsSlug")}`;
 
 <footer class:list={["w-full", { "mt-auto": !noMarginTop }]}>
   <Hr noPadding />
-  
-  <div class="pt-6 pb-2 px-4">
-    
-    <div class="flex flex-col items-center text-center gap-4 mb-6 max-w-4xl mx-auto">
-      
-      <p class="text-sm text-skin-base opacity-90 font-medium">
+
+  <div class="px-4 pt-6 pb-2">
+    <div
+      class="mx-auto mb-6 flex max-w-4xl flex-col items-center gap-4 text-center"
+    >
+      <p class="text-skin-base text-sm font-medium opacity-90">
         {t("footer.greenSoftware")}
       </p>
 
-      <p class="text-xs text-skin-base opacity-80 max-w-2xl leading-relaxed">
+      <p class="text-skin-base max-w-2xl text-xs leading-relaxed opacity-80">
         {t("footer.ipDisclaimer")}
       </p>
-      
     </div>
 
-    <div class="border-t border-skin-line opacity-50 w-1/2 mx-auto mb-6"></div>
+    <div class="border-skin-line mx-auto mb-6 w-1/2 border-t opacity-50"></div>
 
-    <div class="flex flex-col items-center justify-between sm:flex-row-reverse sm:py-4">
+    <div
+      class="flex flex-col items-center justify-between sm:flex-row-reverse sm:py-4"
+    >
       <Socials centered />
-      
-      <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+
+      <div
+        class="flex flex-col items-center text-center sm:items-start sm:text-left"
+      >
         <div class="my-2 flex flex-col items-center sm:flex-row">
           <span>{t("footer.text", { year: currentYear })}</span>
         </div>
 
-        <div class="flex flex-wrap justify-center sm:justify-start gap-3 text-xs text-skin-base opacity-70 mt-1">
-          <a href={privacyLink} class="hover:text-skin-accent hover:underline decoration-dashed underline-offset-4 transition-colors">
+        <div
+          class="text-skin-base mt-1 flex flex-wrap justify-center gap-3 text-xs opacity-70 sm:justify-start"
+        >
+          <a
+            href={privacyLink}
+            class="hover:text-skin-accent decoration-dashed underline-offset-4 transition-colors hover:underline"
+          >
             {t("footer.privacy")}
           </a>
           <span>|</span>
-          <a href={termsLink} class="hover:text-skin-accent hover:underline decoration-dashed underline-offset-4 transition-colors">
+          <a
+            href={termsLink}
+            class="hover:text-skin-accent decoration-dashed underline-offset-4 transition-colors hover:underline"
+          >
             {t("footer.terms")}
           </a>
         </div>
       </div>
     </div>
-    
   </div>
 </footer>

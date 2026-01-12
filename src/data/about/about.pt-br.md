@@ -9,7 +9,7 @@ Meu nome é **FranCILDO**, 48 anos, sou marido, pai, atualmente moro em Fortalez
 
 Talvez você esteja tão cético quanto eu estava quando conheci o trabalho do **Elton Euler**. Vai por mim, eu te entendo. Se eu dissesse que entrei para a **Aliança Divergente** amando tudo de primeira, eu estaria mentindo.
 
-Minha porta de entrada foi através da minha esposa. Ela começou a acompanhar o Elton Euler e me dizia: *"Você precisa ver isso, faz muito sentido com você"*. Como minha formação é em Análise e Desenvolvimento de Sistema e aprendi a buscar lógica em tudo, eu resisti. Vi alguns vídeos, critiquei vários pontos e achei algumas coisas até "tristes" ou pesadas demais de encarar. Fui pesquisar sobre esse sujeito e encontrei algumas coisas interessantes que me tranquilizaram.
+Minha porta de entrada foi através da minha esposa. Ela começou a acompanhar o Elton Euler e me dizia: _"Você precisa ver isso, faz muito sentido com você"_. Como minha formação é em Análise e Desenvolvimento de Sistema e aprendi a buscar lógica em tudo, eu resisti. Vi alguns vídeos, critiquei vários pontos e achei algumas coisas até "tristes" ou pesadas demais de encarar. Fui pesquisar sobre esse sujeito e encontrei algumas coisas interessantes que me tranquilizaram.
 
 ## Embasamento e Credibilidade Acadêmica
 
@@ -46,7 +46,6 @@ Este blog é o registro de como aplico a **Teoria da Permissão** tanto na gest�
     onde você pode conhecer mais sobre a Aliança Divergente com total segurança.
   </p>
 </div>
-
 
 <!-- Botão de CTA -->
 

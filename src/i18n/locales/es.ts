@@ -2,7 +2,8 @@ import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
   "site.title": "Teoría del Permiso",
-  "site.desc": "Estudios y reflexiones sobre la Teoría del Permiso de Elton Euler y la Alianza Divergente.",
+  "site.desc":
+    "Estudios y reflexiones sobre la Teoría del Permiso de Elton Euler y la Alianza Divergente.",
 };
 
 const ESLocale: I18nStrings = {
@@ -59,8 +60,10 @@ const ESLocale: I18nStrings = {
   "footer.terms": "Términos de uso",
   "footer.privacySlug": "politica-de-privacidad",
   "footer.termsSlug": "terminos-de-uso",
-  "footer.greenSoftware": "🌱 Sitio construido utilizando principios de Green Software: Optimizado para la eficiencia energética y la reducción de la huella de carbono.",
-  "footer.ipDisclaimer": "La marca 'Teoría del Permiso' y el ecosistema 'Alianza Divergente' son propiedades intelectuales de Elton Euler. Este portal es una iniciativa independiente de un Aliado oficial con fines de estudio.",
+  "footer.greenSoftware":
+    "🌱 Sitio construido utilizando principios de Green Software: Optimizado para la eficiencia energética y la reducción de la huella de carbono.",
+  "footer.ipDisclaimer":
+    "La marca 'Teoría del Permiso' y el ecosistema 'Alianza Divergente' son propiedades intelectuales de Elton Euler. Este portal es una iniciativa independiente de un Aliado oficial con fines de estudio.",
   "date.published": "Publicado el",
   "date.updated": "Actualizado el",
   "date.month.1": "Enero",

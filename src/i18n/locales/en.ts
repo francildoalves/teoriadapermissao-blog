@@ -2,7 +2,8 @@ import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
   "site.title": "Permission Theory", // Traduzido para SEO local
-  "site.desc": "Studies and insights on Elton Euler's Permission Theory and the Divergent Alliance.",
+  "site.desc":
+    "Studies and insights on Elton Euler's Permission Theory and the Divergent Alliance.",
 };
 
 const ENLocale: I18nStrings = {
@@ -59,8 +60,10 @@ const ENLocale: I18nStrings = {
   "footer.terms": "Terms of Use",
   "footer.privacySlug": "privacy-policy",
   "footer.termsSlug": "terms-of-use",
-  "footer.greenSoftware": "🌱 Site built using Green Software principles: Optimized for energy efficiency and carbon footprint reduction.",
-  "footer.ipDisclaimer": "The brand 'Teoria da Permissão' and the 'Aliança Divergente' ecosystem are intellectual properties of Elton Euler. This portal is an independent initiative by an official Ally for study purposes.",
+  "footer.greenSoftware":
+    "🌱 Site built using Green Software principles: Optimized for energy efficiency and carbon footprint reduction.",
+  "footer.ipDisclaimer":
+    "The brand 'Teoria da Permissão' and the 'Aliança Divergente' ecosystem are intellectual properties of Elton Euler. This portal is an independent initiative by an official Ally for study purposes.",
   "date.published": "Published",
   "date.updated": "Updated",
   "date.month.1": "January",

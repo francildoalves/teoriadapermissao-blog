@@ -9,15 +9,15 @@ import { DEFAULT_LOCALE } from "@/i18n/config";
 export async function getStaticPaths() {
   const policies = await getCollection("policies");
 
-  return policies.map((entry) => {
+  return policies.map(entry => {
     const [lang, filename] = entry.id.split("/");
     const slug = entry.data.postSlug || filename;
     const localeParam = lang === DEFAULT_LOCALE ? undefined : lang;
 
     return {
-      params: { 
-        locale: localeParam, 
-        policy: slug 
+      params: {
+        locale: localeParam,
+        policy: slug,
       },
       props: { entry },
     };
@@ -31,20 +31,18 @@ const isRTL = entry.id.startsWith("ar/");
 ---
 
 <Layout title={entry.data.title}>
-  
   <Header />
 
-  <main 
-    class={`prose mx-auto max-w-3xl px-4 py-12 ${isRTL ? "text-right" : "text-left"}`} 
+  <main
+    class={`prose mx-auto max-w-3xl px-4 py-12 ${isRTL ? "text-right" : "text-left"}`}
     dir={isRTL ? "rtl" : "ltr"}
   >
-    <h1 class="text-3xl font-bold mb-6">{entry.data.title}</h1>
-    
+    <h1 class="mb-6 text-3xl font-bold">{entry.data.title}</h1>
+
     <div class="policy-content">
       <Content />
     </div>
   </main>
 
   <Footer />
-  
 </Layout>

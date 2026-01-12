@@ -46,4 +46,5 @@ Teoría del Permiso puede revisar estos términos de servicio para su sitio web 
 Estos términos y condiciones se rigen y se interpretan de acuerdo con las leyes de Teoría del Permiso (Brasil) y usted se somete irrevocablemente a la jurisdicción exclusiva de los tribunales en ese Estado o ubicación.
 
 ---
+
 > **Nota:** Esta traducción fue generada por Inteligencia Artificial para asegurar el alcance y el SEO. En caso de discrepancias, prevalecerá la versión original en portugués.
