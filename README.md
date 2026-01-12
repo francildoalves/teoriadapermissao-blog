@@ -3,7 +3,7 @@
 > _Documentando a jornada entre a Análise de Sistemas e a Governança Emocional._
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build Status](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/deploy.yml)
+[![Build Status](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/ci.yml/badge.svg)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/ci.yml)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/francildoalves/teoriadapermissao-blog?style=flat-square)](https://github.com/francildoalves/teoriadapermissao-blog/tags)
 ![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100-success?style=flat-square)
 ![Astro](https://img.shields.io/badge/Astro-5.0-orange?style=flat-square)
@@ -145,5 +145,11 @@ pnpm build
 ```
 
 ---
+
+## 📚 Documentação
+
+Documentação técnica e manuais do projeto podem ser encontrados na pasta [docs](./docs).
+
+- [Manual do Pipeline de CI e Badges](./docs/manual-ci-pipeline.md)
 
 © 2025 **FranCILDO Gryphon**. Desenvolvido sob a ótica de _Green Software_.
