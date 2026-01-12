@@ -103,11 +103,12 @@ Edite o arquivo `src/i18n/config.ts`:
 1.  Vá para `src/i18n/locales/`.
 2.  Duplique o arquivo `pt-br.ts` e renomeie para a sigla do novo idioma (ex: `fr.ts`).
 3.  Traduza **TODAS** as chaves do arquivo.
-    *   ⚠️ **Atenção:** O TypeScript vai te impedir de rodar o projeto se faltar alguma chave. A consistência é obrigatória pela interface `I18nStrings`.
+    *   ⚠️ **Atenção:** O TypeScript vai te impedir de rodar o projeto se faltar alguma chave.
+    *   💡 **Dica de UI:** Priorize termos curtos para os menus (ex: "Sobre" em vez de "Sobre mim") para evitar quebras de layout no mobile.
 
 ### Passo 3: Camada de Conteúdo (Markdown)
 
-Crie os arquivos de conteúdo traduzidos nas pastas correspondentes. O sistema de rotas do Astro detectará os arquivos automaticamente baseando-se no sufixo do nome ou nas pastas.
+Crie os arquivos de conteúdo traduzidos nas pastas correspondentes (`src/data/`). O sistema de rotas do Astro detectará os arquivos automaticamente.
 
 1.  **Página Sobre:** Crie `src/data/about/about.[idioma].md`.
 2.  **Políticas:**
@@ -116,12 +117,12 @@ Crie os arquivos de conteúdo traduzidos nas pastas correspondentes. O sistema d
 3.  **Postagens do Blog:**
     *   Para posts traduzidos, adicione-os em `src/data/blog/[idioma]/`.
 
-### Passo 4: Verificação
+### Passo 4: Verificação Técnica
 
-Rode o comando `npm run dev` e teste:
-*   O seletor de idiomas no topo da página.
-*   Navegação entre páginas (veja se a URL muda para `/[idioma]/...`).
-*   Rodapé e textos fixos da interface.
+1.  **Sumário Automático (TOC):** Se o novo idioma usa uma palavra específica para "Índice" (ex: "Sommaire"), atualize a regex em `astro.config.ts`:
+    *   Procure por `remarkToc` > `heading`.
+    *   Adicione o termo separado por `|` (pipe).
+2.  **Teste Final:** Rode `npm run dev` e verifique navegação e troca de idiomas.
 
 ---
 

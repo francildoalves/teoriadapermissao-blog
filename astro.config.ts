@@ -32,7 +32,7 @@ export default defineConfig({
         remarkToc,
         {
           heading:
-            "(table[ -]of[ -])?contents?|toc|محتويات|المحتويات|جدول المحتويات",
+            "(table[ -]of[ -])?contents?|toc|محتويات|المحتويات|جدول المحتويات|índice|sumário|tabla de contenidos|目录",
         },
       ],
       [remarkCollapse, { test: "Table of contents" }],
