@@ -24,11 +24,13 @@ O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade ext
 - **Green Software & Performance:** Pontuação **100/100** em Performance, Acessibilidade, Melhores Práticas e SEO no Lighthouse (Mobile & Desktop). Zero JS desnecessário.
 - **Internacionalização (i18n):**
   - 🇧🇷 **Português (Padrão)** — Conteúdo nativo.
-  - 🇸 **Espanhol** — Suporte completo implementado.
+  - 🇫🇷 **Francês** — Suporte completo implementado (Novo!).
+  - 🇪🇸 **Espanhol** — Suporte completo implementado.
   - 🇺🇸 **Inglês**, 🇨🇳 **Chinês**, 🇸🇦 **Árabe** — Suporte estrutural implementado.
 - **Componentes de Engajamento:** Blocos de alerta visuais (Info, Perigo, Dica, Saiba Mais) para destacar conteúdo no meio dos artigos.
 - **Gestão de Políticas Legais:** Sistema escalável para Termos de Uso e Política de Privacidade, com URLs amigáveis e detecção automática de idioma no rodapé.
 - **UI/UX Estratégica:**
+  - **Layout Vertical:** Cabeçalho com logo centralizado e menu abaixo para melhor acomodação de idiomas latinos.
   - **CTA Integrado:** Botão de ação (_Call to Action_) para produtos externos/afiliados integrado à navegação.
   - **Modo Claro/Escuro:** Respeita a preferência do sistema com alternância manual.
   - **Busca Fuzzy:** Pesquisa rápida _client-side_.
