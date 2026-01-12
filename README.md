@@ -151,5 +151,8 @@ pnpm build
 Documentação técnica e manuais do projeto podem ser encontrados na pasta [docs](./docs).
 
 - [Manual do Pipeline de CI e Badges](./docs/manual-ci-pipeline.md)
+- [Arquitetura e Internacionalização](./docs/arquitetura-i18n.md)
+- [Guia de Criação de Conteúdo](./docs/guia-de-conteudo.md)
+- [Configuração do Site](./docs/configuracao.md)
 
 © 2025 **FranCILDO Gryphon**. Desenvolvido sob a ótica de _Green Software_.
