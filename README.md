@@ -2,7 +2,9 @@
 
 > _Documentando a jornada entre a Análise de Sistemas e a Governança Emocional._
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3877e14a-0bdc-4e85-bcd4-542f93f860a3/deploy-status)](https://app.netlify.com/sites/astro-paper-i18n/deploys)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Build Status](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/code-standards-checks.yml/badge.svg)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/code-standards-checks.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/francildoalves/teoriadapermissao-blog?style=flat-square)](https://github.com/francildoalves/teoriadapermissao-blog/releases)
 ![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100-success?style=flat-square)
 ![Astro](https://img.shields.io/badge/Astro-5.0-orange?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?style=flat-square)
@@ -22,8 +24,8 @@ O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade ext
 - **Green Software & Performance:** Pontuação **100/100** em Performance, Acessibilidade, Melhores Práticas e SEO no Lighthouse (Mobile & Desktop). Zero JS desnecessário.
 - **Internacionalização (i18n):**
   - 🇧🇷 **Português (Padrão)** — Conteúdo nativo.
-  - �🇸 **Espanhol** — Suporte completo implementado.
-  - �🇺🇸 **Inglês**, 🇨🇳 **Chinês**, 🇸🇦 **Árabe** — Suporte estrutural implementado.
+  - 🇸 **Espanhol** — Suporte completo implementado.
+  - 🇺🇸 **Inglês**, 🇨🇳 **Chinês**, 🇸🇦 **Árabe** — Suporte estrutural implementado.
 - **Componentes de Engajamento:** Blocos de alerta visuais (Info, Perigo, Dica, Saiba Mais) para destacar conteúdo no meio dos artigos.
 - **Gestão de Políticas Legais:** Sistema escalável para Termos de Uso e Política de Privacidade, com URLs amigáveis e detecção automática de idioma no rodapé.
 - **UI/UX Estratégica:**
@@ -40,7 +42,7 @@ O objetivo é entregar conteúdo de texto rico (Markdown/MDX) com velocidade ext
 - **Estilização:** [TailwindCSS](https://tailwindcss.com/)
 - **Linguagem:** TypeScript
 - **Conteúdo:** Markdown (`.md`) e MDX
-- **Deploy:** Netlify / Vercel (compatível com qualquer host estático)
+- **Deploy:** Cloudflare Pages (compatível com qualquer Host Estático)
 
 ---
 
