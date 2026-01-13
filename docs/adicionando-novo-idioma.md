@@ -35,6 +35,10 @@ const DE_Locale: I18nStrings = {
   // ... continue traduzindo todas as chaves abaixo
   "search": "Suche",
   "footer.terms": "Nutzungsbedingungen",
+  
+  // NUNCA altere estas chaves abaixo, mantenha em inglês:
+  "footer.privacySlug": "privacy-policy",
+  "footer.termsSlug": "terms-of-use",
 };
 
 export default DE_Locale;
@@ -105,28 +109,32 @@ Este projeto possui um sistema de **testes automatizados** que garante a qualida
 
 ## Passo 3.5: Criar Políticas (Específico deste Projeto)
 
-Este blog possui uma seção de **Políticas** (Privacidade e Termos) que também precisa ser traduzida. Sem isso, os links no rodapé quebrarão.
+Este blog possui uma seção de **Políticas** (Privacidade e Termos) que precisa ser configurada corretamente para não gerar erro 404.
 
 1.  Crie a pasta: `src/data/policies/[novo-lang]/` (ex: `src/data/policies/de/`).
-2.  Copie os arquivos `privacy.md` e `terms.md` de outra pasta (ex: `pt-br`).
-3.  Edite o conteúdo em Markdown.
+2.  Copie os arquivos `privacy-policy.md` e `terms-of-use.md` de outra pasta (ex: `pt-br/`).
+3.  Edite o conteúdo (Título, Texto) traduzindo para o novo idioma.
 
-**Importante: O `postSlug` no arquivo Markdown deve bater com a tradução!**
+**⚠️ CRÍTICO: PADRONIZAÇÃO DE SLUGS**
 
-No seu arquivo de tradução (`src/i18n/locales/de.ts`), você definiu:
-```typescript
-"footer.privacySlug": "datenschutz",
-"footer.termsSlug": "nutzungsbedingungen",
-```
+Para garantir que a troca de idioma funcione sem erros, os identificadores (`postSlug`) **DEVEM ser mantidos em INGLÊS**, independente do idioma do arquivo.
 
-Então, no arquivo `src/data/policies/de/privacy.md`:
+**No arquivo Markdown (`src/data/policies/de/privacy-policy.md`):**
 ```yaml
 ---
-title: Datenschutzerklärung
-postSlug: datenschutz  <-- TEM QUE SER IGUAL AO DO ARQUIVO .TS
+title: Datenschutzerklärung  ## Título Traduzido (OK)
+postSlug: privacy-policy     ## ⛔ NÃO TRADUZA ISTO! Mantenha "privacy-policy"
 ---
-Conteúdo traduzido...
 ```
+
+**No arquivo de tradução (`src/i18n/locales/de.ts`):**
+```typescript
+// MANTENHA EXATAMENTE ASSIM:
+"footer.privacySlug": "privacy-policy",
+"footer.termsSlug": "terms-of-use",
+```
+
+Isso garante que o sistema de roteamento encontre a página correta ao alternar entre idiomas.
 
 ---
 

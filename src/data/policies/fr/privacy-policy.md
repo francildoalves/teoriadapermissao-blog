@@ -1,7 +1,7 @@
 ---
 title: "Politique de Confidentialité"
 description: "Details on collection, usage, cookies, and your rights for a safe and transparent browsing experience."
-postSlug: "politique-de-confidentialite"
+postSlug: "privacy-policy"
 ---
 
 Your privacy is important to us. It is **Teoria da Permissão**'s policy to respect your privacy regarding any information we may collect from you across our website, [Teoria da Permissão](https://teoriadapermissao.com.br), and other sites we own and operate.

@@ -1,7 +1,7 @@
 ---
 title: "Termos de Uso"
 description: "Leia os Termos de Uso. Regras essenciais sobre direitos autorais, uso de conteúdo, responsabilidades e conduta no nosso blog e serviços."
-postSlug: "termos-de-uso"
+postSlug: "terms-of-use"
 ---
 
 ## 1. Termos

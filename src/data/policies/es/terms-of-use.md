@@ -1,7 +1,7 @@
 ---
 title: "Términos de Uso"
 description: "Reglas esenciales sobre derechos de autor, uso de contenidos, responsabilidades y conducta en nuestro blog y servicios."
-postSlug: "terminos-de-uso"
+postSlug: "terms-of-use"
 ---
 
 ## 1. Términos

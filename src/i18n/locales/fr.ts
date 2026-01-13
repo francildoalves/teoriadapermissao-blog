@@ -59,8 +59,8 @@ const FRLocale: I18nStrings = {
   "footer.text": "Copyright © {year} | Tous droits réservés",
   "footer.privacy": "Politique de Confidentialité",
   "footer.terms": "Conditions d'Utilisation",
-  "footer.privacySlug": "politique-de-confidentialite",
-  "footer.termsSlug": "conditions-d-utilisation",
+  "footer.privacySlug": "privacy-policy",
+  "footer.termsSlug": "terms-of-use",
   "footer.greenSoftware":
     "🌱 Site construit selon les principes du Green Software : Optimisé pour l'efficacité énergétique et la réduction de l'empreinte carbone.",
   "footer.ipDisclaimer":

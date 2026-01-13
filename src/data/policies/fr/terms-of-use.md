@@ -1,7 +1,7 @@
 ---
 title: "Conditions d'Utilisation"
 description: "Essential rules regarding copyright, content usage, liabilities, and conduct on our blog and services."
-postSlug: "conditions-d-utilisation"
+postSlug: "terms-of-use"
 ---
 
 ## 1. Terms

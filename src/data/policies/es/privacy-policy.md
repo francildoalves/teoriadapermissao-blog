@@ -1,7 +1,7 @@
 ---
 title: "Política de Privacidad"
 description: "Detalles sobre la recopilación, uso, cookies y sus derechos para una experiencia de navegación segura y transparente."
-postSlug: "politica-de-privacidad"
+postSlug: "privacy-policy"
 ---
 
 Su privacidad es importante para nosotros. Es política de **Teoría del Permiso** respetar su privacidad con respecto a cualquier información que podamos recopilar de usted en nuestro sitio web, [Teoría del Permiso](https://teoriadapermissao.com.br), y otros sitios que poseemos y operamos.

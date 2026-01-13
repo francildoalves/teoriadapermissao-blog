@@ -59,8 +59,8 @@ const PTBRLocale: I18nStrings = {
     "Copyright © {year} FranCILDO Gryphon | Todos os direitos reservados",
   "footer.privacy": "Política de Privacidade",
   "footer.terms": "Termos de Uso",
-  "footer.privacySlug": "politica-de-privacidade",
-  "footer.termsSlug": "termos-de-uso",
+  "footer.privacySlug": "privacy-policy",
+  "footer.termsSlug": "terms-of-use",
   "footer.greenSoftware":
     "🌱 Site construído utilizando princípios de Green Software: Otimizado para eficiência energética e redução de pegada de carbono.",
   "footer.ipDisclaimer":

@@ -58,8 +58,8 @@ const ESLocale: I18nStrings = {
   "footer.text": "Copyright © {year} | Todos los derechos reservados",
   "footer.privacy": "Política de privacidad",
   "footer.terms": "Términos de uso",
-  "footer.privacySlug": "politica-de-privacidad",
-  "footer.termsSlug": "terminos-de-uso",
+  "footer.privacySlug": "privacy-policy",
+  "footer.termsSlug": "terms-of-use",
   "footer.greenSoftware":
     "🌱 Sitio construido utilizando principios de Green Software: Optimizado para la eficiencia energética y la reducción de la huella de carbono.",
   "footer.ipDisclaimer":

@@ -49,16 +49,16 @@ export const SOCIALS: Social[] = [
  */
 export const SHARE_LINKS: Social[] = [
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/sharing/share-offsite/?url=",
-    linkTitle: (t: Translator) => t("sharePost.on", { media: "LinkedIn" }),
-    icon: IconLinkedin,
-  },
-  {
     name: "Instagram",
     href: "https://www.instagram.com/teoriadapermissao.oficial/",
     linkTitle: (t: Translator) => t("sharePost.via", { media: "Instagram" }),
     icon: IconInstagram,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/sharing/share-offsite/?url=",
+    linkTitle: (t: Translator) => t("sharePost.on", { media: "LinkedIn" }),
+    icon: IconLinkedin,
   },
   {
     name: "WhatsApp",
