@@ -1,24 +1,23 @@
 ---
 import { getRelativeLocalePath } from "@/i18n/utils";
 
-export interface Props {
-  id?: string;
-  href: string;
-  class?: string;
-  ariaLabel?: string;
-  title?: string;
+import type { HTMLAttributes } from "astro/types";
+
+export interface Props extends HTMLAttributes<"a"> {
   disabled?: boolean;
+  ariaLabel?: string;
 }
 
 const isExternalPath = (path: string) => URL.canParse(path);
 
 const {
-  id,
+  disabled = false,
   href,
-  class: className = "",
+  class: className,
   ariaLabel,
   title,
-  disabled = false,
+  id,
+  ...props
 } = Astro.props;
 ---
 
@@ -34,15 +33,15 @@ const {
     </span>
   ) : (
     <a
-      id={id}
       href={
-        isExternalPath(href)
-          ? href
-          : getRelativeLocalePath(Astro.currentLocale, href)
+        isExternalPath(String(href))
+          ? String(href)
+          : getRelativeLocalePath(Astro.currentLocale, String(href))
       }
       class:list={["group inline-block hover:text-accent", className]}
       aria-label={ariaLabel}
       title={title}
+      {...props}
     >
       <slot />
     </a>

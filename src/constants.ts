@@ -18,9 +18,22 @@ interface Social {
   icon: (_props: Props) => Element;
 }
 
+interface ShareParams {
+  url: string;
+  title?: string;
+  description?: string;
+  media?: string;
+}
+
+interface ShareSocial {
+  name: string;
+  href: (params: ShareParams) => string;
+  linkTitle: (t: Translator) => string;
+  icon: (_props: Props) => Element;
+}
+
 /**
  * Configuração de Redes Sociais do Perfil (Rodapé e Página Sobre)
- * Edite abaixo para adicionar/remover links para seus perfis pessoais/comerciais.
  */
 export const SOCIALS: Social[] = [
   {
@@ -45,48 +58,47 @@ export const SOCIALS: Social[] = [
 
 /**
  * Configuração de Compartilhamento (Final dos Artigos)
- * Edite abaixo para definir quais plataformas os leitores podem usar para compartilhar seus posts.
  */
-export const SHARE_LINKS: Social[] = [
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/teoriadapermissao.oficial/",
-    linkTitle: (t: Translator) => t("sharePost.via", { media: "Instagram" }),
-    icon: IconInstagram,
-  },
+export const SHARE_LINKS: ShareSocial[] = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/sharing/share-offsite/?url=",
+    href: ({ url }) =>
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
     linkTitle: (t: Translator) => t("sharePost.on", { media: "LinkedIn" }),
     icon: IconLinkedin,
   },
   {
     name: "WhatsApp",
-    href: "https://wa.me/?text=",
+    href: ({ url, title }) =>
+      `https://wa.me/?text=${encodeURIComponent(`${title ? title + " - " : ""}${url}`)}`,
     linkTitle: (t: Translator) => t("sharePost.via", { media: "WhatsApp" }),
     icon: IconWhatsapp,
   },
   {
     name: "Facebook",
-    href: "https://www.facebook.com/sharer.php?u=",
+    href: ({ url }) =>
+      `https://www.facebook.com/sharer.php?u=${encodeURIComponent(url)}`,
     linkTitle: (t: Translator) => t("sharePost.on", { media: "Facebook" }),
     icon: IconFacebook,
   },
   {
     name: "X",
-    href: "https://x.com/intent/post?url=",
+    href: ({ url, title }) =>
+      `https://x.com/intent/post?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title || "")}`,
     linkTitle: (t: Translator) => t("sharePost.on", { media: "X" }),
     icon: IconBrandX,
   },
   {
     name: "Telegram",
-    href: "https://t.me/share/url?url=",
+    href: ({ url, title }) =>
+      `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title || "")}`,
     linkTitle: (t: Translator) => t("sharePost.via", { media: "Telegram" }),
     icon: IconTelegram,
   },
   {
     name: "Pinterest",
-    href: "https://pinterest.com/pin/create/button/?url=",
+    href: ({ url, description, media }) =>
+      `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}${media ? `&media=${encodeURIComponent(media)}` : ""}${description ? `&description=${encodeURIComponent(description)}` : ""}`,
     linkTitle: (t: Translator) => t("sharePost.on", { media: "Pinterest" }),
     icon: IconPinterest,
   },
