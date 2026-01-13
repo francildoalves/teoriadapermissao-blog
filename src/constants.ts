@@ -1,8 +1,8 @@
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
-import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import IconInstagram from "@/assets/icons/IconInstagram.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
-import IconMail from "@/assets/icons/IconMail.svg";
+
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
@@ -18,12 +18,16 @@ interface Social {
   icon: (_props: Props) => Element;
 }
 
+/**
+ * Configuração de Redes Sociais do Perfil (Rodapé e Página Sobre)
+ * Edite abaixo para adicionar/remover links para seus perfis pessoais/comerciais.
+ */
 export const SOCIALS: Social[] = [
   {
-    name: "Github",
-    href: "https://github.com/francildoalves/",
-    linkTitle: (t: Translator) => t("socials.github"),
-    icon: IconGitHub,
+    name: "Instagram",
+    href: "https://www.instagram.com/teoriadapermissao.oficial/",
+    linkTitle: (t: Translator) => t("socials.instagram"),
+    icon: IconInstagram,
   },
   {
     name: "X",
@@ -37,15 +41,25 @@ export const SOCIALS: Social[] = [
     linkTitle: (t: Translator) => t("socials.linkedin"),
     icon: IconLinkedin,
   },
-  {
-    name: "Mail",
-    href: "mailto:francildo@outlook.com",
-    linkTitle: (t: Translator) => t("socials.mail"),
-    icon: IconMail,
-  },
 ] as const;
 
+/**
+ * Configuração de Compartilhamento (Final dos Artigos)
+ * Edite abaixo para definir quais plataformas os leitores podem usar para compartilhar seus posts.
+ */
 export const SHARE_LINKS: Social[] = [
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/sharing/share-offsite/?url=",
+    linkTitle: (t: Translator) => t("sharePost.on", { media: "LinkedIn" }),
+    icon: IconLinkedin,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/teoriadapermissao.oficial/",
+    linkTitle: (t: Translator) => t("sharePost.via", { media: "Instagram" }),
+    icon: IconInstagram,
+  },
   {
     name: "WhatsApp",
     href: "https://wa.me/?text=",
@@ -75,11 +89,5 @@ export const SHARE_LINKS: Social[] = [
     href: "https://pinterest.com/pin/create/button/?url=",
     linkTitle: (t: Translator) => t("sharePost.on", { media: "Pinterest" }),
     icon: IconPinterest,
-  },
-  {
-    name: "Mail",
-    href: "mailto:?subject=See%20this%20post&body=",
-    linkTitle: (t: Translator) => t("sharePost.via", { media: "Mail" }),
-    icon: IconMail,
   },
 ] as const;
