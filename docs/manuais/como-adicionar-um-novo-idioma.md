@@ -77,7 +77,25 @@ description: "..."
 
 ---
 
-## 4. Pastas de Conteúdo Obrigatórias
+## 4. Página "Sobre" (Obrigatória)
+
+Para que o link "Sobre" no menu funcione, você deve criar o arquivo correspondente na pasta `src/data/about/`.
+
+1.  Crie o arquivo: `src/data/about/about.[lang].md` (ex: `about.de.md`).
+2.  **Atenção:** O nome do arquivo DEVE seguir o padrão `about.[código-idioma].md`.
+
+```yaml
+---
+title: "Über mich"
+description: "..."
+---
+
+Conteúdo sobre o autor...
+```
+
+---
+
+## 5. Pastas de Conteúdo Obrigatórias
 
 Para evitar erros no build, lembre-se de criar as pastas vazias para o novo idioma, mesmo que ainda não tenha posts:
 

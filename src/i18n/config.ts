@@ -5,6 +5,7 @@ import ENLocale from "./locales/en";
 import CNLocale from "./locales/zh";
 import ESLocale from "./locales/es";
 import FRLocale from "./locales/fr";
+import DELocale from "./locales/de";
 
 export type LocaleProfile = {
   name: string;
@@ -63,6 +64,13 @@ export const localeToProfile = {
     direction: "ltr",
     googleFontName: "IBM+Plex+Mono",
     default: true, // <--- Isso define como padrão!
+  },
+  de: {
+    name: "Deutsch",
+    messages: DELocale,
+    langTag: "de-DE",
+    direction: "ltr",
+    googleFontName: "IBM+Plex+Mono",
   },
 } satisfies Record<string, LocaleProfile>;
 
