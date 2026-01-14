@@ -1,6 +1,6 @@
 # Manual Técnico de Manutenção
 
-Este documento serve como guia de referência para manutenção técnica e expansão dos recursos avançados do projeto.
+Este documento serve como guia de referência de como confugurar o compartilhamento de posts do blog e os botões que levam para as redes sociais.
 
 ---
 
