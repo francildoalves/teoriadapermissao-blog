@@ -2,12 +2,13 @@
 
 > _Documentando a jornada entre a Análise de Sistemas e a Governança Emocional._
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build Status](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/ci.yml/badge.svg)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/ci.yml)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/francildoalves/teoriadapermissao-blog?style=flat-square)](https://github.com/francildoalves/teoriadapermissao-blog/tags)
-![Lighthouse Score](https://img.shields.io/badge/Lighthouse-100-success?style=flat-square)
-![Astro](https://img.shields.io/badge/Astro-5.0-orange?style=flat-square)
-![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?style=flat-square)
+[![build](https://img.shields.io/github/actions/workflow/status/francildoalves/teoriadapermissao-blog/ci.yml?style=flat-square&label=build)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/ci.yml)
+[![release](https://img.shields.io/github/v/release/francildoalves/teoriadapermissao-blog?style=flat-square&label=release)](https://github.com/francildoalves/teoriadapermissao-blog/releases)
+[![license](https://img.shields.io/github/license/francildoalves/teoriadapermissao-blog?style=flat-square&label=license)](LICENSE)
+[![style](https://img.shields.io/badge/style-commitizen-pink?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![quality](https://img.shields.io/badge/quality-100%25-success?style=flat-square)](https://pagespeed.web.dev/)
+[![activity](https://img.shields.io/github/last-commit/francildoalves/teoriadapermissao-blog?style=flat-square&label=activity)](https://github.com/francildoalves/teoriadapermissao-blog/commits)
+[![size](https://img.shields.io/github/repo-size/francildoalves/teoriadapermissao-blog?style=flat-square&label=code%20size)](https://github.com/francildoalves/teoriadapermissao-blog)
 
 Este repositório contém o código-fonte do blog oficial da **Teoria da Permissão**. O projeto foi desenvolvido seguindo princípios de **Green Software**, priorizando performance, acessibilidade e baixo consumo de recursos computacionais.
 

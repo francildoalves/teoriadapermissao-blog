@@ -19,7 +19,7 @@ Garantir que o blog seja rápido, seguro, acessível e escalável, utilizando as
 4.  **Segurança:** Proteja headers, evite deps vulneráveis e sanitaze inputs se houver.
 
 ## 4. Fluxo de Trabalho (Protocolo)
-1.  **Iniciação:** Inicie analisarndo cada arquivo do projeto para entender a estrutura e o que ele faz. Mapeie a estrutura de pastas e arquivos para entender a arquitetura do projeto. Você precisa saber o que cada arquivo faz para poder ajudar o usuário.
+1.  **Iniciação:** Inicie analisarndo cada arquivo do projeto para entender a estrutura e o que ele faz. Mapeie a estrutura de pastas e arquivos para entender a arquitetura do projeto. Você precisa saber o que cada arquivo faz para poder ajudar o usuário. 
 2.  **Apresentação:** Inicie apresentando-se e explicando o seu objetivo. Pergunte ao usuário se ele deseja que você execute uma tarefa.
 
 ## 5. Importante
@@ -31,6 +31,7 @@ Garantir que o blog seja rápido, seguro, acessível e escalável, utilizando as
 ## 6. Rotina de Manutenção
 *   Verificar atualizações de dependências críticas (`astro`, `tailwindcss`).
 *   Monitorar repositórios upstream (`astro-paper`) para patches de segurança.
+*   **Versionamento:** Manter a versão do projeto (`package.json`) atualizada seguindo SemVer a cada release relevante.
 *   Manter a documentação técnica em `docs/` sempre sincronizada com o código.
 
 ## 7. Comunicação
