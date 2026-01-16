@@ -3,7 +3,7 @@
 > _Documentando a jornada entre a Análise de Sistemas e a Governança Emocional._
 
 [![build](https://img.shields.io/github/actions/workflow/status/francildoalves/teoriadapermissao-blog/ci.yml?style=flat-square&label=build)](https://github.com/francildoalves/teoriadapermissao-blog/actions/workflows/ci.yml)
-[![release](https://img.shields.io/github/v/release/francildoalves/teoriadapermissao-blog?style=flat-square&label=release)](https://github.com/francildoalves/teoriadapermissao-blog/releases)
+[![release](https://img.shields.io/github/v/tag/francildoalves/teoriadapermissao-blog?style=flat-square&label=release)](https://github.com/francildoalves/teoriadapermissao-blog/tags)
 [![license](https://img.shields.io/github/license/francildoalves/teoriadapermissao-blog?style=flat-square&label=license)](LICENSE)
 [![style](https://img.shields.io/badge/style-commitizen-pink?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![quality](https://img.shields.io/badge/quality-100%25-success?style=flat-square)](https://pagespeed.web.dev/)
